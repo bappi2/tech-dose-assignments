@@ -1,3 +1,5 @@
+package SortingAlgorithm;
+
 public class BubbleSort {
 
     public static void bubbleSort(int [] nums) {
@@ -28,6 +30,5 @@ public class BubbleSort {
         bubbleSort(nums);
 
         printArray(nums);
-
     }
 }

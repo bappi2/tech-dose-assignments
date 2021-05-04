@@ -1,3 +1,5 @@
+package BitManipulation;
+
 public class SingleNumber {
     public int singleNumber(int[] nums) {
         int result = 0;
