@@ -1,4 +1,4 @@
-package BitManipulation;
+package ArrayProblems;
 
 public class MajorityElement {
 }
