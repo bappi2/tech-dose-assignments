@@ -1,6 +1,6 @@
 package BitManipulation;
 
-public class c {
+public class PowerofTwo {
     public boolean isPowerOfTwo(int n) {
         if (n == 0) return false;
         while (n % 2 == 0) n /= 2;
