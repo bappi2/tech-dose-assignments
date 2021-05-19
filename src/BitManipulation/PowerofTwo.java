@@ -9,7 +9,7 @@ public class PowerofTwo {
 
     public boolean isPowerOfTwoBetter(int n) {
         if (n == 0) return false;
-        long x = (long) n;
-        return (x & (-x)) == x;
+
+        return (n & (n - 1)) == 0;
     }
 }
