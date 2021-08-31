@@ -10,4 +10,18 @@ public class HammingDistance {
         }
         return result;
     }
+    public int hammingDistance2(int x, int y) {
+        return Integer.bitCount(x ^ y);
+    }
+
+    public int hammingDistance3(int x, int y) {
+        int xor = x ^ y;
+        int distance = 0;
+        while (xor != 0) {
+            distance += 1;
+            // remove the rightmost bit of '1'
+            xor = xor & (xor - 1);
+        }
+        return distance;
+    }
 }

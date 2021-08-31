@@ -1,4 +1,4 @@
-package ArrayProblems;
+package ArrayProblems.Sorting;
 
 public class DutchNationalFlagProblem {
 }
