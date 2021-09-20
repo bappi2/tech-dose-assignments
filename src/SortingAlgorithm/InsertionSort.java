@@ -1,5 +1,7 @@
 package SortingAlgorithm;
 
+import static java.lang.System.*;
+
 public class InsertionSort {
     public static void insertionSort(int [] nums) {
         int len = nums.length;
