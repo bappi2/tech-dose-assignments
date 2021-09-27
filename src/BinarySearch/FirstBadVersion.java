@@ -11,6 +11,10 @@ public class FirstBadVersion {
         return n;
     }
 
+    private boolean isBadVersion(int i) {
+        return false;
+    }
+
     /*Complexity analysis
     Time complexity : O(n)O(n). Assume that isBadVersion(version)isBadVersion(version)
     takes constant time to check if a version is bad. It takes at most n - 1n−1 checks,

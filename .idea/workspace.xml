@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ee1888f-274e-4e03-9f0e-0e8bd0207f8a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/buttercodePractice/string/ReverseWordsString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/buttercodePractice/array/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/FirstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DiffHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DiffHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/buttercodePractice/string/ReverseWordsString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/buttercodePractice/string/ReverseWordsString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,44 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="RunManager" selected="Application.TwoSum">
+    <configuration name="ReverseWordsString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="buttercodePractice.string.ReverseWordsString" />
+      <module name="tech-dose-assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="buttercodePractice.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="buttercodePractice.array.TwoSum" />
+      <module name="tech-dose-assignments" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="buttercodePractice.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ReverseWordsString" />
+      <item itemvalue="Application.TwoSum" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TwoSum" />
+        <item itemvalue="Application.ReverseWordsString" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <servers />
@@ -31,5 +72,26 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/buttercodePractice/string/ReverseWordsString.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/buttercodePractice/string/ReverseWordsString.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/buttercodePractice/string/ReverseWordsString.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
