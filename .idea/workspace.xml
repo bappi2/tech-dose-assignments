@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c193f6b1-e034-4a67-841b-ef9a31923dc2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/String/AddSpaces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/buttercodePractice/Stack/ValidParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/buttercodePractice/string/ValidPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BitManipulation/SingleNumberII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BitManipulation/SingleNumberII.java" afterDir="false" />
-    </list>
+    <list default="true" id="c193f6b1-e034-4a67-841b-ef9a31923dc2" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -171,7 +165,6 @@
         <option value="$PROJECT_DIR$/src/BinarySearch/FirstBadVersion.java" />
         <option value="$PROJECT_DIR$/src/SortingAlgorithm/CountingInversion.java" />
         <option value="$PROJECT_DIR$/src/ArrayProblems/ArrayRotations/SearchinRotatedSortedArray.java" />
-        <option value="$PROJECT_DIR$/src/BitManipulation/BitwiseANDofNumbersRange.java" />
         <option value="$PROJECT_DIR$/src/BitManipulation/CountingBits.java" />
         <option value="$PROJECT_DIR$/src/StackQueue/ValidParentheses.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -184,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/String/AddSpaces.java" />
         <option value="$PROJECT_DIR$/src/ArrayProblems/SmoothDescentPeriods.java" />
         <option value="$PROJECT_DIR$/src/BitManipulation/SingleNumberII.java" />
+        <option value="$PROJECT_DIR$/src/BitManipulation/BitwiseANDofNumbersRange.java" />
       </list>
     </option>
   </component>
@@ -221,12 +215,6 @@
               <item name="tech-dose-assignments" type="b2602c69:ProjectViewProjectNode" />
               <item name="tech-dose-assignments" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tech-dose-assignments" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tech-dose-assignments" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BitManipulation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -394,16 +382,15 @@
       <workItem from="1637362529706" duration="391000" />
       <workItem from="1637363408145" duration="388000" />
       <workItem from="1638210802454" duration="681000" />
-      <workItem from="1639510339264" duration="5580000" />
+      <workItem from="1639510339264" duration="5732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17932000" />
+    <option name="totallyTimeSpent" value="18084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="156" y="25" width="1524" height="1025" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5006757" side_tool="true" weight="0.39911798" />
@@ -424,9 +411,9 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3296582" />
       <window_info anchor="right" id="leetcode" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32925472" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49256757" weight="0.32963374" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3777027" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49256757" visible="true" weight="0.32925472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3777027" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
