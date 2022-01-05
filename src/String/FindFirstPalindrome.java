@@ -1,17 +1,28 @@
-package buttercodePractice.string;
+package String;
 
-public class ValidPalindrome {
-    public boolean isPalindrome(String s) {
-        if (s == null || s.length() < 2) {
+public class FindFirstPalindrome {
+    public String firstPalindrome(String[] words) {
+        for (String word : words) {
+            if (isPalindrome(word)) {
+                return word;
+            }
+        }
+        return "";
+    }
+
+    private boolean isPalindrome(String s) {
+        if (s == null || s.length() == 0) {
             return true;
         }
 
         int start = 0;
         int end = s.length() - 1;
+
         while (start < end) {
             while (start < end && !Character.isLetterOrDigit(s.charAt(start))) {
                 start++;
             }
+
             while (start < end && !Character.isLetterOrDigit(s.charAt(end))) {
                 end--;
             }
@@ -22,17 +33,18 @@ public class ValidPalindrome {
             if (startChar != endChar) {
                 return false;
             }
+
             start++;
             end--;
         }
+
         return true;
     }
 
     public static void main(String[] args) {
-        String str = "A1 man, a plan, a canal: Panam1a";
-        String str2 = "race a car";
-        ValidPalindrome vp = new ValidPalindrome();
-        System.out.println(vp.isPalindrome(str));
-        System.out.println(vp.isPalindrome(str2));
+        String [] words = {"abc","car","ada","racecar","cool"};
+        FindFirstPalindrome ffp = new FindFirstPalindrome();
+
+        System.out.println(ffp.firstPalindrome(words));
     }
 }
