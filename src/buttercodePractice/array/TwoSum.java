@@ -1,7 +1,5 @@
 package buttercodePractice.array;
 
-import javafx.util.Pair;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,8 +47,6 @@ public class TwoSum {
         System.out.println(res[0] + " " + res[1]);
         res = ts.twoSum2(nums, 20);
         System.out.println(res[0] + " " + res[1]);
-
-        Pair<Integer, Integer> pair = new Pair<>(1, 2);
 
     }
 }

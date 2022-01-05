@@ -28,3 +28,5 @@ hs_err_pid*
 *.iws
 .idea/workspace.xml
 .idea/misc.xml
+.idea/uiDesigner.xml
+.idea/compiler.xml
