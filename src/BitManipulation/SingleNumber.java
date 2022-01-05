@@ -9,4 +9,11 @@ public class SingleNumber {
         return result;
     }
 
+    public static void main(String[] args) {
+        SingleNumber sn = new SingleNumber();
+
+        int[] nums = {5, 2, 3 , 4, 2, 3, 4};
+        System.out.println(sn.singleNumber(nums));
+    }
+
 }

@@ -1,7 +1,7 @@
 package BitManipulation;
 import java.util.Arrays;
 
-public class SingleNumberII {
+public class  SingleNumberII {
     public int singleNumberSort(int[] nums) {
         if (nums.length < 2) {
             return nums[0];

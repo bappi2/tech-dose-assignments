@@ -3,7 +3,7 @@ package slidingWindowTechnique;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FruitIntoBaskets {
+public class  FruitIntoBaskets {
     public int totalFruit(int[] fruits) {
         if (fruits == null || fruits.length == 0) {
             return 0;
