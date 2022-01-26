@@ -1,6 +1,13 @@
 package SortingAlgorithm;
 
 public class SelectionSort {
+/*
+The selection sort algorithm sorts an array by repeatedly finding the minimum
+element (considering ascending order) from unsorted part and putting it at the beginning.
+The algorithm maintains two subarrays in a given array.
+1) The subarray which is already sorted.
+2) Remaining subarray which is unsorted.
+ */
 
     public static void selectionSort(int [] nums) {
         int len = nums.length;
