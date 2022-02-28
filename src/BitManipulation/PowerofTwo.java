@@ -12,4 +12,13 @@ public class PowerofTwo {
 
         return (n & (n - 1)) == 0;
     }
+
+
+    boolean isPowerOfTwo(int n) {
+        if(n==0)
+            return false;
+
+        return Math.floor(Math.log(n))==ceil(log2(n))?true:false;
+    }
+
 }

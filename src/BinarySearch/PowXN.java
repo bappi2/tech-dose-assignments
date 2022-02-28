@@ -2,7 +2,9 @@ package BinarySearch;
 
 public class PowXN {
 
-        public double myPow(double x, int n) {
+
+
+    public double myPow(double x, int n) {
             if (n == 0) {
                 return 1;
             }
