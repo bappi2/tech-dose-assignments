@@ -18,7 +18,7 @@ public class PowerofTwo {
         if(n==0)
             return false;
 
-        return Math.floor(Math.log(n))==ceil(log2(n))?true:false;
+        return Math.floor(Math.log(n))==Math.ceil(Math.log(n))?true:false;
     }
 
 }
