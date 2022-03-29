@@ -1,4 +1,4 @@
-package ArrayProblems;
+package ArrayProblems.Sorting;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
