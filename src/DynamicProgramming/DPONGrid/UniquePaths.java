@@ -1,5 +1,7 @@
 package DynamicProgramming.DPONGrid;
 
+import java.util.Arrays;
+
 public class UniquePaths {
     /*
     A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below).
@@ -17,17 +19,19 @@ How many possible unique paths are there?
 
     // DP
     public int uniquePaths(int m, int n) {
-        int[][] d = new int[m][n];
+        int[][] dp=new int[m][n];
 
-        for(int[] arr : d) {
-            Arrays.fill(arr, 1);
-        }
-        for(int col = 1; col < m; ++col) {
-            for(int row = 1; row < n; ++row) {
-                d[col][row] = d[col - 1][row] + d[col][row - 1];
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(i==0||j==0){
+                    dp[i][j]=1;
+                }
+                else{
+                    dp[i][j]=dp[i-1][j]+dp[i][j-1];
+                }
             }
         }
-        return d[m - 1][n - 1];
+        return dp[m-1][n-1];
     }
 
 }
