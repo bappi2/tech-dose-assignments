@@ -1,5 +1,8 @@
 package Blind75Problems.HeapProblems;
 
+import java.util.HashMap;
+import java.util.PriorityQueue;
+
 public class TopKFrequentElement {
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer,Integer> map=new HashMap<>();

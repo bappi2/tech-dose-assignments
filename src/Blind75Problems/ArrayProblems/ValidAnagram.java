@@ -1,5 +1,7 @@
 package Blind75Problems.ArrayProblems;
 
+import java.util.Arrays;
+
 public class ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if(s.length() != t.length()) return false;

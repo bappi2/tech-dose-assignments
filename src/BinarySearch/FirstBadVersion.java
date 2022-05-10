@@ -1,5 +1,7 @@
 package BinarySearch;
 
+import java.util.LinkedList;
+
 public class FirstBadVersion {
     //The straight forward way is to brute force it by doing a linear scan.
     public int firstBadVersion(int n) {
@@ -36,4 +38,10 @@ public class FirstBadVersion {
         return left;
     }
 
+    public static void main(String[] args) {
+        LinkedList<Integer>[] map = new LinkedList[10];
+
+        System.out.println(map[0] == null);
+
+    }
 }

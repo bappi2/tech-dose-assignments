@@ -1,5 +1,8 @@
 package HashMap;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+
 public class DesignHashMap {
     class MyHashMap {
 
@@ -7,6 +10,7 @@ public class DesignHashMap {
         /** Initialize your data structure here. */
         public MyHashMap() {
             hash = new int[100001];
+            Arrays.fill(hash , -1);
         }
 
         /** value will always be non-negative. */

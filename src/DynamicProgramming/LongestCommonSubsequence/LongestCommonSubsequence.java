@@ -52,6 +52,20 @@ public class LongestCommonSubsequence {
     }
 
     class Solution {
+        /*
+        String s1 = "AGGTAB";
+        String s2 = "GXTXAYB";
+
+          0 G X T X A Y B
+        0 0 0 0 0 0 0 0 0
+        A 0 0 0 0 0 1 1 1
+        G 0 1 1 1 1 1 1 1
+        G 0 1 1 1 1 1 1 1
+        T 0 1 1 2 2 2 2 2
+        A 0 1 1 2 2 3 3 3
+        B 0 1 1 2 2 3 3 4
+         */
+
         int[][] dp;
         public int longestCommonSubsequence(String text1, String text2) {
             dp = new int[text1.length()+1][text2.length()+1];

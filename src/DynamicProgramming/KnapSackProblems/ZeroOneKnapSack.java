@@ -92,7 +92,21 @@ public class ZeroOneKnapSack {
 
         return knapSackRec(W, wt, val, N, dp);
     }
+/*
+Let weight elements = {1, 2, 3}
+Let weight values = {10, 15, 40}
+Capacity=6
 
+   0   1   2   3   4   5   6
+
+0  0   0   0   0   0   0   0
+
+1  0  10  10  10  10  10  10
+
+2  0  10  15  25  25  25  25
+
+3  0  10  15  40  50  55  65
+ */
     // DP tabulation
     static int knapSack(int W, int wt[], int val[], int n)
     {
