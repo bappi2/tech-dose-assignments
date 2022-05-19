@@ -1,7 +1,6 @@
-package BinarySearch;
+package BLINDxx75xxProblems.BinarySearchProblems;
 
-public class FindFirstandLastPositionofElementinSortedArray {
-
+public class FindFirstandLastPositionSortedArray {
     public int[] searchRange(int[] nums, int target) {
         int [] result = {-1 , -1};
         for (int i=0; i < nums.length; i++) {
@@ -14,6 +13,7 @@ public class FindFirstandLastPositionofElementinSortedArray {
         }
         return result;
     }
+
 
     // lo, hi, mid = lo + (hi - lo) / 2
     // findFirst() nums[mid] < target
@@ -64,49 +64,8 @@ public class FindFirstandLastPositionofElementinSortedArray {
     }
 
 
-    // ====
-    // https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array
-    public int[] searchRange(int[] nums, int target) {
-        int[] res=new int[]{-1,-1};
-        if(nums.length==0) return res;
-        int start=0,end=nums.length-1;
-
-        while(start<end){
-            int mid = start + (end-start)/2;
-
-            if(nums[mid]>=target){
-                end = mid;
-            }
-            else{
-                start = mid+1;
-            }
-        }
-
-        if(nums[start] != target){
-            return res;
-        }
-
-        res[0] = start;
-
-        end = nums.length;
-
-        while(start<end){
-            int mid = start + (end-start)/2;
-
-            if(nums[mid] > target){
-                end=mid;
-            }
-            else{
-                start = mid +1;
-            }
-        }
-
-        res[1] = start -1;
-
-        return res;
-    }
-
-    ======
+    //
+    //   ======
     public int[] searchRange(int[] nums, int target) {
 
         int firstOccurrence = this.findBound(nums, target, true);
@@ -161,6 +120,3 @@ public class FindFirstandLastPositionofElementinSortedArray {
         return -1;
     }
 }
-
-
-

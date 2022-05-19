@@ -16,7 +16,7 @@ package BinarySearch;
         •	The divisor will never be 0.
    */
 
-class .DivideTwoIntegers { // time < o(logn), space < o(logn) because we use (sum+sum) <= dividend， binary search
+class DivideTwoIntegers { // time < o(logn), space < o(logn) because we use (sum+sum) <= dividend， binary search
     public int divide(int dividend, int divisor) {
         int sign = 1;
         if (dividend < 0 && divisor > 0 || dividend > 0 && divisor < 0) {
