@@ -1,5 +1,11 @@
 package PrampProblems;
 
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 public class WordCountEngine {
     /*
     Word Count Engine
@@ -37,4 +43,47 @@ Constraints:
 [input] string document
 [output] array.array.string
      */
+
+    public static void main(String[] args) {
+        String document = "Practice makes perfect. you'll only get Perfect by practice. just practice!";
+
+        String[][] output = wordCountEngine(document);
+
+        Arrays.stream(output).forEach(arr -> {
+            System.out.println(arr[0] + "->" + arr[1]);
+        });
+    }
+
+    static String[][] wordCountEngine(String doc) {
+
+        doc = doc.toLowerCase();
+        doc = doc.replaceAll("[^a-z ]", "");
+
+        String[] words = doc.split(" ");
+
+        LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
+
+        for (int i = 0; i < words.length; i++) {
+            if (!map.containsKey(words[i])) {
+                map.put(words[i], 1);
+            } else {
+                map.put(words[i], map.get(words[i]) + 1);
+            }
+
+        }
+        //sorting in descending order of values
+        LinkedHashMap<String, Integer> sortedMap = map.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
+
+        //adding hashmap values to 2D array.
+        String[][] arrayString = sortedMap.entrySet()
+                .stream()
+                .map(e -> new String[]{e.getKey(), String.valueOf(e.getValue())})
+                .toArray(String[][]::new);
+
+
+        return arrayString;
+    }
 }

@@ -22,6 +22,18 @@ Constraints:
 1 ≤ arr.length ≤ 100
      */
 
+    int linearSearch(int arr[], int n)
+    {
+        int i;
+        for (i = 0; i < n; i++) {
+            if (arr[i] == i)
+                return i;
+        }
+
+        /* If no fixed point present then return -1 */
+        return -1;
+    }
+
     static int indexEqualsValueSearch(int[] arr) {
         int start = 0, end = arr.length - 1;
         int res = -1;

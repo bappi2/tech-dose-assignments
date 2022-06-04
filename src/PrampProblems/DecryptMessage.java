@@ -45,4 +45,31 @@ Constraints:
 [input] string word
 The ASCII value of every char is in the range of lowercase letters a-z.
      */
+
+    public static void main(String[] args) {
+        System.out.println(decrypt("dnotq") + " should be [crime]");
+        System.out.println(decrypt("flgxswdliefy") + " should be [encyclopedia]");
+        System.out.println(decrypt("rajsb") + " should be [qqqqq]");
+        System.out.println(decrypt("bvqmjhgghjmqvbiqzjugthwmdv") + " should be [abcdefghijklmnopqrstuvwxyz]");
+        System.out.println(decrypt("eobamwpnlmhklrq") + " should be [drugtrafficking]");
+        System.out.println(decrypt("") + " should be []");
+    }
+
+    private static String decrypt(String word) {
+        int sum = 1;
+        StringBuilder sb = new StringBuilder();
+        for (char c : word.toCharArray()) {
+            char cur = increase(c - sum);
+            sb.append(cur);
+            sum += cur;
+        }
+        return sb.toString();
+    }
+
+    private static char increase(int c) {
+        while (c < 'a') {
+            c = c + 26;
+        }
+        return (char) c;
+    }
 }
