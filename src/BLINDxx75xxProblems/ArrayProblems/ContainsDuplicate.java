@@ -1,5 +1,9 @@
 package BLINDxx75xxProblems.ArrayProblems;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class ContainsDuplicate {
     // Brtue Force
     public boolean containsDuplicate(int[] nums) {
@@ -12,7 +16,7 @@ public class ContainsDuplicate {
     }
 
     // Sort
-    public boolean containsDuplicate(int[] nums) {
+    public boolean containsDuplicate2(int[] nums) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; ++i) {
             if (nums[i] == nums[i + 1]) return true;
@@ -20,7 +24,7 @@ public class ContainsDuplicate {
         return false;
     }
     // HashSet
-    public boolean containsDuplicate(int[] nums) {
+    public boolean containsDuplicate3(int[] nums) {
         Set<Integer> set = new HashSet<>(nums.length);
         for (int x: nums) {
             if (set.contains(x)) return true;

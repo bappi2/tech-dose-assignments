@@ -26,10 +26,11 @@ n == height.length
         return maxarea;
     }
 
-    public int maxArea(int[] height) {
+    public int maxArea2(int[] height) {
         int maxarea = 0;
         int left = 0;
         int right = height.length - 1;
+        // end condition left == right
         while (left < right) {
             int width = right - left;
             maxarea = Math.max(maxarea, Math.min(height[left], height[right]) * width);

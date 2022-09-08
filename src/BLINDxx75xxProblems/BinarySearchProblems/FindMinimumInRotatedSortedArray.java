@@ -18,55 +18,50 @@ Input: nums = [11,13,15,17]
 Output: 11
 Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
      */
-
     public int findMin(int[] nums) {
-        // If the list has just one element then return that element.
-        if (nums.length == 1) {
-            return nums[0];
+        if (nums == null || nums.length == 0) {
+            return 0;
         }
 
-        // initializing left and right pointers.
-        int left = 0, right = nums.length - 1;
+        int lo = 0;
+        int hi = nums.length - 1;
 
-        // if the last element is greater than the first element then there is no
-        // rotation.
-        // e.g. 1 < 2 < 3 < 4 < 5 < 7. Already sorted array.
-        // Hence the smallest element is first element. A[0]
-        if (nums[right] > nums[0]) {
-            return nums[0];
-        }
+        while (lo + 1 < hi) {
+            int mid = lo + (hi - lo) / 2;
 
-        // Binary search way
-        while (right >= left) {
-            // Find the mid element
-            int mid = left + (right - left) / 2;
-
-            // if the mid element is greater than its next element then mid+1 element is the
-            // smallest
-            // This point would be the point of change. From higher to lower value.
-            if (nums[mid] > nums[mid + 1]) {
-                return nums[mid + 1];
-            }
-
-            // if the mid element is lesser than its previous element then mid element is
-            // the smallest
-            if (nums[mid - 1] > nums[mid]) {
-                return nums[mid];
-            }
-
-            // if the mid elements value is greater than the 0th element this means
-            // the least value is still somewhere to the right as we are still dealing with
-            // elements
-            // greater than nums[0]
-            if (nums[mid] > nums[0]) {
-                left = mid + 1;
-            } else {
-                // if nums[0] is greater than the mid value then this means the smallest value
-                // is somewhere to
-                // the left
-                right = mid - 1;
+            if (nums[lo] < nums[hi]) {
+                return nums[lo];
+            } else if (nums[mid] < nums[hi]) {
+                hi = mid;
+            } else if (nums[lo] < nums[mid]) {
+                lo = mid;
             }
         }
-        return Integer.MAX_VALUE;
+        // end condition left + 1 == right
+        return Math.min(nums[lo], nums[hi]);
     }
+
+/*
+Understand the problem:
+The problem looks like the search in rotated sorted array.
+It is clearly that we need to use the binary search. The key
+is to decide which half we wanna go in each iteration. There
+are three cases to consider:
+  -- Case 1: nums[lo] < nums[mid] && nums[mid] < nums[hi].
+  It indicates that the array is sorted. So the first element
+  must be the minimum. So return nums[lo].
+
+  -- Case 2: nums[lo] < nums[mid] && nums[mid] > nums[hi].
+  e.g.. 4 5 6 7 0 1 2. In this case the minimum number must
+  be in the right half. So lo = mid + 1;
+
+  -- Case 3: nums[lo] > nums[mid] && nums[mid] < nums[hi].
+  e..g. 5 6 7 0 1 2 4. In this case, the minimum must be in
+  the left half, but including the mid. So hi = mid;
+
+  -- Case 4 (NOT EXISTED): nums[lo] > nums[mid] && nums[mid] > nums[hi]. 7 6 5 4 2 1 0.
+This case does not exist since there is no way to rotate the array like this.
+ */
+
+
 }

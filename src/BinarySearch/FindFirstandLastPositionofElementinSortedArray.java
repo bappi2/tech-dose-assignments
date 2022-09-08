@@ -66,7 +66,7 @@ public class FindFirstandLastPositionofElementinSortedArray {
 
     // ====
     // https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array
-    public int[] searchRange(int[] nums, int target) {
+    public int[] searchRange2(int[] nums, int target) {
         int[] res=new int[]{-1,-1};
         if(nums.length==0) return res;
         int start=0,end=nums.length-1;
@@ -106,8 +106,8 @@ public class FindFirstandLastPositionofElementinSortedArray {
         return res;
     }
 
-    ======
-    public int[] searchRange(int[] nums, int target) {
+    //======
+    public int[] searchRange3(int[] nums, int target) {
 
         int firstOccurrence = this.findBound(nums, target, true);
 

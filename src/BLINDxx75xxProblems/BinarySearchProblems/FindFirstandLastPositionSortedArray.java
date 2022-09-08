@@ -18,7 +18,7 @@ public class FindFirstandLastPositionSortedArray {
     // lo, hi, mid = lo + (hi - lo) / 2
     // findFirst() nums[mid] < target
     // findLast() nums[mid] > target
-    public int[] searchRange(int[] nums, int target) {
+    public int[] searchRange2(int[] nums, int target) {
         int n = nums.length;
         int left = findFirst(nums, target, n);
         int right = findLast(nums, target, n);
@@ -66,7 +66,7 @@ public class FindFirstandLastPositionSortedArray {
 
     //
     //   ======
-    public int[] searchRange(int[] nums, int target) {
+    public int[] searchRange3(int[] nums, int target) {
 
         int firstOccurrence = this.findBound(nums, target, true);
 
