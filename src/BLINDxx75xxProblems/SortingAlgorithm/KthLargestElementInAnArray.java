@@ -1,4 +1,4 @@
-package ArrayProblems.Sorting;
+package BLINDxx75xxProblems.SortingAlgorithm;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;

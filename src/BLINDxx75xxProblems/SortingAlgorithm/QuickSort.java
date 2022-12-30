@@ -1,4 +1,4 @@
-package SortingAlgorithm;
+package BLINDxx75xxProblems.SortingAlgorithm;
 
 public class QuickSort {
     /* This function takes last element as pivot,

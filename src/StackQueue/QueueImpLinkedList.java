@@ -1,5 +1,7 @@
 package StackQueue;
 
+import java.util.HashMap;
+
 public class QueueImpLinkedList {
 }
 

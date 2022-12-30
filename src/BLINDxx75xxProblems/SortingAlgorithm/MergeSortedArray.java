@@ -1,4 +1,4 @@
-package SortingAlgorithm;
+package BLINDxx75xxProblems.SortingAlgorithm;
 
 import java.util.Arrays;
 

@@ -4,26 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c193f6b1-e034-4a67-841b-ef9a31923dc2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/CapacityToShipPackagesWithinDDays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/FindMinimumInRotatedSortedArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/FirstBadVersion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/KokoEatingBananas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/SearchInsertPosition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/SplitArrayLargestSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/SqrtX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/ThePeakMountainArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/OppositeDirection/TwoSumSorted.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/OppositeDirection/ValidPalindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/SameDirection/MiddleofaLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/SameDirection/MoveZeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/SameDirection/RemoveDuplicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/SlidingWindow/FindAllAnagramsInAString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/SlidingWindow/LongestSubstringwithoutRepeatingCharacters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/SlidingWindow/MinimumWindowSubstring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/TwoPointers/TrappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c193f6b1-e034-4a67-841b-ef9a31923dc2" name="Default" comment="add code">
+      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/Search2DMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/Merge2SortedArraysWithoutUsingExtraSpace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayProblems/Sorting/CountingInversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/CountingInversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayProblems/Sorting/DutchNationalFlagProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/DutchNationalFlagProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayProblems/Sorting/KthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/KthLargestElementInAnArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArrayProblems/Sorting/Merge2SortedArraysWithoutUsingExtraSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/BestTimeBuySellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/BestTimeBuySellStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/ContainerWithMostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/ContainerWithMostWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/MaximumSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/ProductArrayExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/ArrayProblems/ProductArrayExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/BinarySearchProblems/FirstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/DynamicProgramming/ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/DynamicProgramming/ClimbingStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/DynamicProgramming/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/DynamicProgramming/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BLINDxx75xxProblems/LinkedListProblems/MergeTowSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/LinkedListProblems/MergeTwoSortedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/FirstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/MedianofTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/MedianofTwoSortedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearch/PowXN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearch/PowXN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMap/DesignHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMap/DesignHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/CountingInversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/CountingSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/MergeSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/MergeSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SortingAlgorithm/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BLINDxx75xxProblems/SortingAlgorithm/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StackQueue/QueueImpLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StackQueue/QueueImpLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +149,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
@@ -210,17 +222,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="LoadTestClient" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="BLINDxx75xxProblems" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.LoadTest">
+  <component name="RunManager" selected="Application.BubbleSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BLINDxx75xxProblems.SortingAlgorithm.BubbleSort" />
+      <module name="tech-dose-assignments" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BLINDxx75xxProblems.SortingAlgorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="buttercodePractice.array.FourSum" />
       <module name="tech-dose-assignments" />
@@ -302,6 +334,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.BubbleSort" />
       <item itemvalue="Application.FourSum" />
       <item itemvalue="Application.FourSumHashMap" />
       <item itemvalue="Application.ThreeSum" />
@@ -309,6 +342,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.LoadTest" />
         <item itemvalue="Application.FourSumHashMap" />
         <item itemvalue="Application.FourSum" />
@@ -316,7 +350,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -350,6 +384,33 @@
       <workItem from="1631722366312" duration="743000" />
       <workItem from="1631813571692" duration="4037000" />
       <workItem from="1641840032968" duration="13789000" />
+      <workItem from="1662875864157" duration="1237000" />
+      <workItem from="1663054766379" duration="1337000" />
+      <workItem from="1663085893737" duration="910000" />
+      <workItem from="1663088328929" duration="11118000" />
+      <workItem from="1663880020831" duration="6267000" />
+      <workItem from="1664215378035" duration="3937000" />
+      <workItem from="1664435633776" duration="9992000" />
+      <workItem from="1664919322172" duration="2464000" />
+      <workItem from="1665592535150" duration="4549000" />
+      <workItem from="1666201630845" duration="597000" />
+      <workItem from="1666803967671" duration="5218000" />
+      <workItem from="1667493311651" duration="598000" />
+      <workItem from="1668016097443" duration="591000" />
+      <workItem from="1668018538934" duration="597000" />
+      <workItem from="1668209282860" duration="1521000" />
+      <workItem from="1668445070578" duration="968000" />
+      <workItem from="1668450166156" duration="2793000" />
+      <workItem from="1668623513058" duration="5829000" />
+      <workItem from="1669138869213" duration="3466000" />
+      <workItem from="1669830310273" duration="598000" />
+      <workItem from="1670011762718" duration="598000" />
+      <workItem from="1670270614237" duration="601000" />
+      <workItem from="1671000928557" duration="2502000" />
+      <workItem from="1671442036215" duration="636000" />
+      <workItem from="1671516162558" duration="50498000" />
+      <workItem from="1671748548583" duration="2058000" />
+      <workItem from="1672379540927" duration="5226000" />
     </task>
     <servers />
   </component>
@@ -418,6 +479,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info id="Designer" order="2" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

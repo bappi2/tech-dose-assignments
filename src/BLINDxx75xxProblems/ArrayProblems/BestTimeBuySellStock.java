@@ -18,7 +18,7 @@ public class BestTimeBuySellStock {
 // the second number (selling price) must be larger than the first
 // one (buying price).
 //
-//In formal terms, we need to find max(prices[j]−prices[i], for every ii and jj such that j > ij>i.
+//In formal terms, we need to find max(prices[j]−prices[i], for every i and j such that j > i.
     // Time complexity: O(n^2)
     public int maxProfit(int prices[]) {
         int maxprofit = 0;
@@ -44,8 +44,14 @@ public class BestTimeBuySellStock {
         for (int i = 0; i < prices.length; i++) {
             if (prices[i] < minprice)
                 minprice = prices[i];
-            else if (prices[i] - minprice > maxprofit)
-                maxprofit = prices[i] - minprice;
+            else {
+                int profit = prices[i] - minprice;
+                if (profit > maxprofit) {
+                    maxprofit = profit;
+                }
+
+            }
+
         }
         return maxprofit;
     }

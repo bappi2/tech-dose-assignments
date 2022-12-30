@@ -1,4 +1,4 @@
-package SortingAlgorithm;
+package BLINDxx75xxProblems.SortingAlgorithm;
 
 /*
 Another Example:

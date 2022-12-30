@@ -10,6 +10,21 @@ public class ProductArrayExceptSelf {
         int[] L = new int[length];
         int[] R = new int[length];
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // Final answer array to be returned
         int[] answer = new int[length];
 
