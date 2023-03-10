@@ -23,10 +23,6 @@
 hs_err_pid*
 
 # Intellij
-.idea/
+.idea
 *.iml
 *.iws
-.idea/workspace.xml
-.idea/misc.xml
-.idea/uiDesigner.xml
-.idea/compiler.xml

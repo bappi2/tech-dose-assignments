@@ -20,6 +20,13 @@ public class MaximumSubarray {
 
         return maxSubarray;
     }
+    // Calculate the sum of all subarrays, and keep track of the best one.
+    // To actually generate all subarrays would take O(N^3)
+    // time, but with a little optimization, we can achieve brute force in O(N^2)
+    // time. The trick is to recognize that all of the subarrays
+    // starting at a particular value will share a common prefix.
+
+
     // Time complexity: O(N)
     // Space complexity: O(1)
     public int maxSubArray2(int[] nums) {
@@ -37,6 +44,11 @@ public class MaximumSubarray {
 
         return maxSubarray;
     }
-
+// We need a general way to figure out when a part of the array is worth keeping.
+//
+//As expected, any subarray whose sum is positive is worth keeping. Let's start
+// with an empty array, and iterate through the input, adding numbers to our
+// array as we go along. Whenever the sum of the array is negative, we know the
+// entire array is not worth keeping, so we'll reset it back to an empty array.
 
 }

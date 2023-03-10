@@ -1,6 +1,6 @@
 package BLINDxx75xxProblems.ArrayProblems;
 
-public class MaximumProductSubarray {
+public class MaximumProductSubArray {
     /*
     Input: nums = [2,3,-2,4]
 Output: 6
@@ -13,6 +13,23 @@ Constraints:
 The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
 
      */
+
+    // brute force
+    public int maxProduct(int[] nums) {
+        if (nums.length == 0) return 0;
+
+        int max = nums[0];
+
+        for (int i = 0; i < nums.length; i++) {
+            int currPro = 1;
+            for (int j = i; j < nums.length; j++) {
+                currPro *= nums[j];
+                max = Math.max(max, currPro);
+            }
+        }
+
+        return max;
+    }
 
     public int maxProduct(int[] nums) {
         if (nums.length == 0) return 0;
