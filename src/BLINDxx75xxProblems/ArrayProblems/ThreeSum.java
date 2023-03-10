@@ -35,6 +35,7 @@ public class ThreeSum {
 
                         result.add(curr);
 
+                        // Remove duplicated results
                         int leftValue = nums[left];
                         while (left < nums.length && nums[left] == leftValue) {
                             left++;

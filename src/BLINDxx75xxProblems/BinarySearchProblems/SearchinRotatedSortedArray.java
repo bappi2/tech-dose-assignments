@@ -42,7 +42,7 @@ Output: -1
         }
     }
     //Java Solution 2 - Iterative
-    public int search(int[] nums, int target) {
+    public int search2(int[] nums, int target) {
         int left = 0;
         int right= nums.length-1;
 

@@ -31,7 +31,7 @@ The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit int
         return max;
     }
 
-    public int maxProduct(int[] nums) {
+    public int maxProduct2(int[] nums) {
         if (nums.length == 0) return 0;
 
         int max_so_far = nums[0];

@@ -15,7 +15,7 @@ public class ValidAnagram {
     }
 
 
-    public boolean isAnagram(String s, String t) {
+    public boolean isAnagram2(String s, String t) {
         if(s.length() != t.length()) return false;
         int[] cnt = new int[26];
 
