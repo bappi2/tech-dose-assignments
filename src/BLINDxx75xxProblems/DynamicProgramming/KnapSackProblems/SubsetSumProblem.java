@@ -1,4 +1,4 @@
-package BLINDxx75xxProblems.DynamicProgramming;
+package BLINDxx75xxProblems.DynamicProgramming.KnapSackProblems;
 
 public class SubsetSumProblem {
     // https://www.techiedelight.com/subset-sum-problem/

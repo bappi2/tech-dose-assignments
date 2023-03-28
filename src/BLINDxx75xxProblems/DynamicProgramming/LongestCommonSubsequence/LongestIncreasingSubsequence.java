@@ -1,4 +1,4 @@
-package BLINDxx75xxProblems.DynamicProgramming;
+package BLINDxx75xxProblems.DynamicProgramming.LongestCommonSubsequence;
 
 public class LongestIncreasingSubsequence {
     // Time complexity: O(N^2)

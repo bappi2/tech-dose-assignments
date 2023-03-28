@@ -1,4 +1,4 @@
-package BLINDxx75xxProblems.DynamicProgramming;
+package BLINDxx75xxProblems.DynamicProgramming.KnapSackProblems;
 
 import java.util.Arrays;
 

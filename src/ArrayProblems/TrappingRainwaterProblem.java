@@ -12,7 +12,7 @@ Find maximum height of bar from the right end upto an index i in the array \text
 Iterate over the \text{height}height array and update ans:
 Add min(left_max[i],right_max[i])−height[i] to ans
      */
-
+/*
     int trap(vector<int>& height)
     {
         if(height.empty())
@@ -33,7 +33,7 @@ Add min(left_max[i],right_max[i])−height[i] to ans
         }
         return ans;
     }
-
+*/
     // Approach 3: Using stacks
 
     // Approach 4: Using 2 pointers

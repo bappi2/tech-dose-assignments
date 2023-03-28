@@ -21,4 +21,6 @@ public class MergeKSortedList {
         }
         return head.next;
     }
+
+    // https://www.techiedelight.com/efficiently-merge-k-sorted-linked-lists/
 }

@@ -58,4 +58,57 @@ public class ThreeSum {
         }
         return result;
     }
+
+    public List<List<Integer>> threeSumTest(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return result;
+        }
+
+        Arrays.sort(nums);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] > 0) break;
+
+            if (i == 0 || nums[i] > nums[i-1]) {
+                int lo = i+1;;
+                int hi = nums.length -1;
+
+                while (lo < hi) {
+                    int sum = nums[i] + nums[lo] + nums[hi];
+
+                    if (sum == 0) {
+                        List<Integer> curr = new ArrayList<>();
+
+                        curr.add(nums[i]);
+                        curr.add(nums[lo]);
+                        curr.add(nums[hi]);
+
+                        result.add(curr);
+                        lo++;
+                        hi--;
+                        while (lo < hi && nums[lo-1] == nums[lo] ) lo++;
+                        while (lo < hi && nums[hi+1] == nums[hi]) hi--;
+
+
+                    }
+                    if (sum < 0) {
+                        lo++;
+                    }
+                    else {
+                        hi--;
+                    }
+                }
+            }
+
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        ThreeSum ts = new ThreeSum();
+        int [] nums = {-1,0,1,2,-1,-4};
+
+        System.out.println(ts.threeSumTest(nums));
+    }
 }

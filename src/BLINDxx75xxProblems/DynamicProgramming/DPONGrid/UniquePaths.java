@@ -1,4 +1,4 @@
-package BLINDxx75xxProblems.DynamicProgramming;
+package BLINDxx75xxProblems.DynamicProgramming.DPONGrid;
 
 public class UniquePaths {
     // recursive

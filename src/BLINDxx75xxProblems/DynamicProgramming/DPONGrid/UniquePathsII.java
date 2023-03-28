@@ -1,4 +1,4 @@
-package DynamicProgramming.DPONGrid;
+package BLINDxx75xxProblems.DynamicProgramming.DPONGrid;
 
 public class UniquePathsII {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
