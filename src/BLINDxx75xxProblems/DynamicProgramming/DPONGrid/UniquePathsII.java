@@ -45,7 +45,7 @@ public class UniquePathsII {
     // Space O(1)
 
     // simple DP
-    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+    public int uniquePathsWithObstacles2(int[][] obstacleGrid) {
         int m = obstacleGrid.length;
         int n = obstacleGrid[0].length;
 

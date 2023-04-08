@@ -1,5 +1,11 @@
 package BLINDxx75xxProblems.HeapProblems;
 
+import util.ListNode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class MergeKSortedList {
     //TC: O(nlogn)
     public ListNode mergeKLists(ListNode[] lists) {

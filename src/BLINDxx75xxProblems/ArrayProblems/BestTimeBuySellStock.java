@@ -49,9 +49,7 @@ public class BestTimeBuySellStock {
                 if (profit > maxprofit) {
                     maxprofit = profit;
                 }
-
             }
-
         }
         return maxprofit;
     }

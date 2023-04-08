@@ -72,6 +72,4 @@ public class FibonacciNumberNth {
 
         System.out.print(fib(n));
     }
-};
-
 }

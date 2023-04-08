@@ -53,7 +53,7 @@ public class CoinChange_II {
 
     // Function to find the total number of distinct ways to get a change of `target`
     // from an unlimited supply of coins in set `S`
-    public static int count(int[] S, int target)
+    public static int count2(int[] S, int target)
     {
         int n = S.length;
 

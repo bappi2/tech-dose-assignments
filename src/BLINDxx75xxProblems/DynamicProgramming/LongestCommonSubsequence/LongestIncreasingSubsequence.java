@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.DynamicProgramming.LongestCommonSubsequence;
 
+import java.util.Arrays;
+
 public class LongestIncreasingSubsequence {
     // Time complexity: O(N^2)
     // Space complexity: O(N)
