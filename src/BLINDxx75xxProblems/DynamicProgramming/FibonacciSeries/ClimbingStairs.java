@@ -22,27 +22,27 @@ public class ClimbingStairs {
 // ways to reach Nth stair
     class GFG {
 
-        // A simple recursive program to
-        // find N'th fibonacci number
-        static int fib(int n, int dp[]) {
-            if (n <= 1)
-                return dp[n] = 1;
+        public int climbStairs(int n) {
+            int [] dp = new int [n+1];
+            Arrays.fill(dp, -1);
 
+            if (n <= 2) {
+                return n;
+            }
+            return climbStairsDP(n, dp);
+        }
+        int climbStairsDP(int n, int [] dp) {
+            if (n <= 2) {
+                return n;
+            }
             if (dp[n] != -1) {
                 return dp[n];
             }
-            dp[n] = fib(n - 1, dp) + fib(n - 2, dp);
-            return dp[n];
+            else {
+                dp[n] = climbStairsDP(n-1, dp) + climbStairsDP(n-2, dp);
+                return dp[n];
+            }
         }
 
-        // Returns number of ways to
-        // reach s'th stair
-        static int countWays(int n) {
-            int[] dp = new int[n + 1];
-            Arrays.fill(dp, -1);
-
-            fib(n, dp);
-            return dp[n];
-        }
     }
 }

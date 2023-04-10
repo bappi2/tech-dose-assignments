@@ -21,7 +21,7 @@ public class ZeroOneKnapSack {
     {
         return (a > b) ? a : b;
     }
-
+/*
     // Returns the maximum value that
     // can be put in a knapsack of
     // capacity W
@@ -107,6 +107,7 @@ Capacity=6
 
 3  0  10  15  40  50  55  65
  */
+    /*
     // DP tabulation
     static int knapSack(int W, int wt[], int val[], int n)
     {
@@ -142,5 +143,5 @@ Capacity=6
         int n = val.length;
         System.out.println(knapSack(W, wt, val, n));
     }
-
+*/
 }
