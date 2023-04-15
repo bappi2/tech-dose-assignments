@@ -1,7 +1,10 @@
 package ArrayProblems;
 
+import java.util.Arrays;
+
 public class MajorityElement {
-    public int majorityElement(int[] nums) {
+    // https://leetcode.com/problems/majority-element/description/
+    public int majorityElementSort(int[] nums) {
         Arrays.sort(nums);
         return nums[nums.length/2];
     }
@@ -20,7 +23,7 @@ public class MajorityElement {
         return candidate;
     }
 
-    public int majorityElement(int[] nums) {
+    public int majorityElement2(int[] nums) {
 
         int majority_index = 0;
         int count = 1;
