@@ -1,6 +1,7 @@
 package TrieProblems;
 
 public class AutoCompleteUsingTrieSurya {
+    /*
     // C++ program to demonstrate auto-complete feature
 // using Trie data structure.
 
@@ -179,4 +180,6 @@ public class AutoCompleteUsingTrieSurya {
 
         return 0;
     }
+
+     */
 }

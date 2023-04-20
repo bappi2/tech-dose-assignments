@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.LinkedListProblems;
 
+import java.util.HashMap;
+
 public class LRUCache {
     // https://leetcode.com/problems/lru-cache/description/
 

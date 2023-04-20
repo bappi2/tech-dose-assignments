@@ -1,6 +1,36 @@
 package BLINDxx75xxProblems.DynamicProgramming;
 
+import java.util.Arrays;
+
 public class DecodeWays {
+    public int numDecodings(String s) {
+        int [] dp = new int[s.length() +1];
+        Arrays.fill(dp, -1);
+        dp[0] = 1;
+
+        if (s.charAt(0) == '0') {
+            return 0;
+        }
+        return helper(s, dp, s.length());
+    }
+    int helper(String s, int [] dp, int n) {
+        if (dp[n] != -1) {
+            return dp[n];
+        }
+        else {
+            if (n == 0 || n ==1 ) {
+                return 1;
+            }
+            int count = s.charAt(n-1) != '0' ? helper(s, dp, n-1) : 0;
+            if (s.charAt(n-2) == '1' || (s.charAt(n-2) == '2' && s.charAt(n-1) < '7')) {
+                count += helper(s, dp, n-2);
+            }
+            dp[n] = count;
+            return count;
+        }
+
+
+    }
 
     static int countDecoding(char[] digits, int n)
     {

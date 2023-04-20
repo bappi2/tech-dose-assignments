@@ -2,7 +2,7 @@ package TrieProblems;
 
 public class PreFixCountSurya {
 }
-
+/*
 //CODE TO Count_Number_Of_Strings_With_Given_Prefix
 //Assumption: All characters are in lowercase
 #include<iostream>
@@ -137,3 +137,5 @@ using namespace std;
 
         return 0;
         }
+
+ */

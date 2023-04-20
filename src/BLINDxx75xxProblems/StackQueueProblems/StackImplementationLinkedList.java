@@ -10,12 +10,12 @@ class Node
     BLINDxx75xxProblems.StackQueueProblems.Node next;      // pointer to the next node
 }
 
-class Stack
+class MyStack
 {
     private BLINDxx75xxProblems.StackQueueProblems.Node top;
     private int nodesCount;
 
-    public Stack() {
+    public MyStack() {
         this.top = null;
         this.nodesCount = 0;
     }
@@ -100,7 +100,7 @@ class Main
 {
     public static void main(String[] args)
     {
-        Stack stack = new Stack();
+        MyStack stack = new MyStack();
 
         stack.push(1);
         stack.push(2);

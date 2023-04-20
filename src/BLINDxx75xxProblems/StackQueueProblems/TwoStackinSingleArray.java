@@ -1,6 +1,7 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
-import StackQueue.Stack;
+import java.util.Arrays;
+import java.util.List;
 
 public class TwoStackinSingleArray {
     private int[] arr;
@@ -8,7 +9,7 @@ public class TwoStackinSingleArray {
     private int top1, top2;
 
     // Constructor
-    public Stack(int n)
+    public TwoStackinSingleArray(int n)
     {
         capacity = n;
         arr = new int[n];
@@ -73,16 +74,13 @@ public class TwoStackinSingleArray {
         top2++;
         return top;
     }
-}
 
-class Main
-{
     public static void main(String[] args)
     {
         List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> list2 = Arrays.asList(6, 7, 8, 9, 10);
 
-        Stack stack = new Stack(list1.size() + list2.size());
+        TwoStackinSingleArray stack = new TwoStackinSingleArray(list1.size() + list2.size());
 
         for (int i: list1) {
             stack.pushFirst(i);
@@ -96,3 +94,7 @@ class Main
         System.out.println("Popping element from the second stack: " + stack.popSecond());
     }
 }
+
+
+
+

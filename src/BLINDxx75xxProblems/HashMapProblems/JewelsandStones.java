@@ -1,5 +1,8 @@
 package BLINDxx75xxProblems.HashMapProblems;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class JewelsandStones {
     // brute force
     public int numJewelsInStones(String J, String S) {
@@ -15,7 +18,7 @@ public class JewelsandStones {
     // Time Complexity: O(J.length∗S.length))
 
     // HashMap
-    public int numJewelsInStones(String J, String S) {
+    public int numJewelsInStones2(String J, String S) {
         Set<Character> Jset = new HashSet();
         for (char j: J.toCharArray())
             Jset.add(j);
@@ -29,7 +32,7 @@ public class JewelsandStones {
     // Time Complexity: O(J.length+S.length).
 
     // Array
-    public int numJewelsInStones(String J, String S) {
+    public int numJewelsInStones3(String J, String S) {
 
         int[] stones=new int[128];
 

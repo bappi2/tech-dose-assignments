@@ -1,14 +1,10 @@
 package TrieProblems;
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
 //Total : N*K + Q(K+N)
 //Space : N*K
 public class PrefixandSuffixSearch  {
-
+/*
     Trie prefix = null;
     Trie suffix = null;
 
@@ -73,6 +69,8 @@ public class PrefixandSuffixSearch  {
             return root.index;
         }
     }
+
+ */
 }
 
 

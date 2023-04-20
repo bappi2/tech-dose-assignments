@@ -16,7 +16,7 @@ public class SquaresSortedArray {
     }
 
     // two pointers
-    public int[] sortedSquares(int[] nums) {
+    public int[] sortedSquares2(int[] nums) {
         int len = nums.length;
         int [] result = new int[len];
 

@@ -1,7 +1,5 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
-import StackQueue.Stack;
-
 public class MinStack {
 
         private Stack<Integer> stack;
@@ -9,8 +7,8 @@ public class MinStack {
 
         /** initialize your data structure here. */
         public MinStack() {
-            stack = new Stack<>();
-            minStack = new Stack<>();
+            stack = new Stack<Integer>();
+            minStack = new Stack<Integer>();
         }
 
         public void push(int x) {
@@ -34,56 +32,5 @@ public class MinStack {
         public int getMin() {
             return minStack.peek();
         }
-
-        ///////////////////
-
-    class MinStack2 {
-        Stack<Pair> stack;
-
-        public MinStack() {
-            stack = new Stack<>();
-
-
-
-        }
-
-        public void push(int val) {
-            if (stack.isEmpty()) {
-                Pair pair = new Pair(val, val);
-                stack.push(pair);
-            }
-            else {
-                Pair top = stack.peek();
-                if (top.val > val) {
-                    Pair pair = new Pair(val, val);
-                    stack.push(pair);
-                }
-                else {
-                    stack.push(new Pair(val, top.val));
-                }
-            }
-        }
-
-        public void pop() {
-            stack.pop();
-
-        }
-
-        public int top() {
-            return stack.peek().key;
-        }
-
-        public int getMin() {
-            return stack.peek().val;
-        }
-        class Pair {
-            int key;
-            int val;
-            Pair (int key, int val) {
-                this.key = key;
-                this.val = val;
-            }
-        }
-    }
 }
 

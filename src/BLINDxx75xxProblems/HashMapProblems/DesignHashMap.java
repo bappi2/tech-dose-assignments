@@ -30,12 +30,12 @@ public class DesignHashMap {
     }
 
 
-    class MyHashMap {
+    class MyHashMap2 {
 
         /** Initialize your data structure here. */
         LinkedList<Entry>[] map;
         public static int SIZE = 769;
-        public MyHashMap() {
+        public MyHashMap2() {
             map = new LinkedList[SIZE];
         }
 
