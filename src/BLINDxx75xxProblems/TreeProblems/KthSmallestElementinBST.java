@@ -1,5 +1,11 @@
 package BLINDxx75xxProblems.TreeProblems;
 
+import util.TreeNode;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 public class KthSmallestElementinBST {
     class Count {
         int c;
@@ -26,7 +32,7 @@ public class KthSmallestElementinBST {
         }
     }
     // ===
-    public int kthSmallest(TreeNode root, int k) {
+    public int kthSmallest2(TreeNode root, int k) {
         List<Integer> result = new ArrayList<>();
         inOrderTraversal(root, result);
         return result.get(k-1);

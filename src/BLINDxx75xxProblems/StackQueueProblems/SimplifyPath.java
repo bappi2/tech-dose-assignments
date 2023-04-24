@@ -1,6 +1,6 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
-import StackQueue.Stack;
+import java.util.Stack;
 
 public class SimplifyPath {
    /*

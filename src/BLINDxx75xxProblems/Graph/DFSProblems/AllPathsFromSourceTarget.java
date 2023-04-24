@@ -1,5 +1,10 @@
 package BLINDxx75xxProblems.Graph.DFSProblems;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 public class AllPathsFromSourceTarget {
     // https://leetcode.com/problems/all-paths-from-source-to-target/description/
     private int target;
@@ -22,6 +27,15 @@ public class AllPathsFromSourceTarget {
         }
     }
 
+    public List<List<Integer>> allPathsSourceTarget2(int[][] graph) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> currPath = new ArrayList<>();
+
+        currPath.add(0);
+        dfs(graph, result, currPath, 0);
+        return result;
+    }
+
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
 
         this.target = graph.length - 1;
@@ -35,4 +49,46 @@ public class AllPathsFromSourceTarget {
         return this.results;
     }
 
+    void dfs(int[][] graph, List<List<Integer>> result, List<Integer> currPath, int currNode) {
+        if (currNode == graph.length -1) {
+
+            result.add(new ArrayList<>(currPath));
+            return;
+        }
+        for (int neighbor: graph[currNode]) {
+            currPath.add(neighbor);
+            dfs(graph, result, currPath, neighbor);
+            currPath.remove(currPath.size()-1);
+        }
+    }
+
+    public List<List<Integer>> allPathsSourceTarget3(int[][] graph) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> currPath = new ArrayList<>();
+
+        boolean [] seen = new boolean[graph.length];
+        Arrays.fill(seen, false);
+
+        currPath.add(0);
+        seen[0] = true;
+        dfs_undirected(graph, result, seen, currPath, 0);
+        return result;
+    }
+
+    private void dfs_undirected(int[][] graph, List<List<Integer>> result,
+                                boolean[] seen, List<Integer> currPath, int currNode) {
+        if (currNode == graph.length -1) {
+            result.add(new ArrayList<>(currPath));
+            return;
+        }
+        for (int neighbor: graph[currNode]) {
+            if (seen[currNode] != true) {
+                currPath.add(neighbor);
+                seen[neighbor] = true;
+                dfs_undirected(graph, result, seen, currPath, neighbor);
+                seen[neighbor] = false;
+                currPath.remove(currPath.size() -1);
+            }
+        }
+    }
 }

@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
+import java.util.Stack;
+
 public class MinStack {
 
         private Stack<Integer> stack;

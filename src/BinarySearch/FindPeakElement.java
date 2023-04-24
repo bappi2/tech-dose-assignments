@@ -10,7 +10,7 @@ public class FindPeakElement {
         return nums.length - 1;
     }
 
-    public int findPeakElement(int[] nums) {
+    public int findPeakElement2(int[] nums) {
         int l = 0, r = nums.length - 1;
         while (l < r) {
             int mid = (l + r) / 2;

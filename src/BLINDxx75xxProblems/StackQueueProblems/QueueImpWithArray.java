@@ -1,7 +1,33 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
 public class QueueImpWithArray {
-    class Queue
+    public static void main (String[] args)
+    {
+        // create a queue of capacity 5
+        Queue q = new Queue(5);
+
+        q.enqueue(1);
+        q.enqueue(2);
+        q.enqueue(3);
+
+        System.out.println("The front element is " + q.peek());
+        q.dequeue();
+        System.out.println("The front element is " + q.peek());
+
+        System.out.println("The queue size is " + q.size());
+
+        q.dequeue();
+        q.dequeue();
+
+        if (q.isEmpty()) {
+            System.out.println("The queue is empty");
+        }
+        else {
+            System.out.println("The queue is not empty");
+        }
+    }
+
+    static class Queue
     {
         private int[] arr;      // array to store queue elements
         private int front;      // front points to the front element in the queue
@@ -80,32 +106,6 @@ public class QueueImpWithArray {
         // Utility function to check if the queue is full or not
         public boolean isFull() {
             return (size() == capacity);
-        }
-    }
-
-    public static void main (String[] args)
-    {
-        // create a queue of capacity 5
-        BLINDxx75xxProblems.StackQueueProblems.Queue q = new BLINDxx75xxProblems.StackQueueProblems.Queue(5);
-
-        q.enqueue(1);
-        q.enqueue(2);
-        q.enqueue(3);
-
-        System.out.println("The front element is " + q.peek());
-        q.dequeue();
-        System.out.println("The front element is " + q.peek());
-
-        System.out.println("The queue size is " + q.size());
-
-        q.dequeue();
-        q.dequeue();
-
-        if (q.isEmpty()) {
-            System.out.println("The queue is empty");
-        }
-        else {
-            System.out.println("The queue is not empty");
         }
     }
 

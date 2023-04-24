@@ -1,7 +1,7 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
 public class StackArrayImp {
-    class Stack
+    static class Stack
     {
         private int arr[];
         private int top;

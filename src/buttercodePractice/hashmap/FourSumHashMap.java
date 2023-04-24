@@ -1,7 +1,6 @@
 package buttercodePractice.hashmap;
 
 import buttercodePractice.array.FourSum;
-import javafx.util.Pair;
 
 import java.util.*;
 

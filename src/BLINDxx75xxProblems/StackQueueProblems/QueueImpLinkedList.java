@@ -1,7 +1,7 @@
 package BLINDxx75xxProblems.StackQueueProblems;
 
 public class QueueImpLinkedList {
-    class Node
+    static class Node
     {
         int data;       // integer data
         Node next;      // pointer to the next node
@@ -14,8 +14,8 @@ public class QueueImpLinkedList {
         }
     }
 
-    class Queue {
-        private static BLINDxx75xxProblems.StackQueueProblems.Node rear = null, front = null;
+    static class Queue {
+        private static Node rear = null, front = null;
         private static int count = 0;
 
         // Utility function to dequeue the front element
@@ -26,7 +26,7 @@ public class QueueImpLinkedList {
                 System.exit(-1);
             }
 
-            BLINDxx75xxProblems.StackQueueProblems.Node temp = front;
+            Node temp = front;
             System.out.printf("Removing %d\n", temp.data);
 
             // advance front to the next node
@@ -48,7 +48,7 @@ public class QueueImpLinkedList {
         public static void enqueue(int item)     // insertion at the end
         {
             // allocate a new node in a heap
-            BLINDxx75xxProblems.StackQueueProblems.Node node = new BLINDxx75xxProblems.StackQueueProblems.Node(item);
+            Node node = new Node(item);
             System.out.printf("Inserting %d\n", item);
 
             // special case: queue was empty
@@ -89,7 +89,7 @@ public class QueueImpLinkedList {
 
         public static void main(String[] args)
         {
-            Queue q = new Queue();
+            QueueImpLinkedList.Queue q = new QueueImpLinkedList.Queue();
             q.enqueue(1);
             q.enqueue(2);
             q.enqueue(3);

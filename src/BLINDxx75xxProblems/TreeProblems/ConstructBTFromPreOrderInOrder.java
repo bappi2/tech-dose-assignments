@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.TreeProblems;
 
+import util.TreeNode;
+
 public class ConstructBTFromPreOrderInOrder {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         if (preorder == null || inorder== null

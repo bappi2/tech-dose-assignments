@@ -1,5 +1,11 @@
 package BLINDxx75xxProblems.LinkedListProblems;
 
+import util.ListNode;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class MergeKSortedLists {
     // https://leetcode.com/problems/merge-k-sorted-lists/
     // brute force
@@ -24,7 +30,7 @@ public class MergeKSortedLists {
     }
 
     // merge one node at a time
-    public ListNode mergeKLists(ListNode[] lists) {
+    public ListNode mergeKLists2(ListNode[] lists) {
         ListNode newHead = new ListNode(0);
 
         for (ListNode l: lists) {
@@ -58,7 +64,7 @@ public class MergeKSortedLists {
         return newhead.next;
     }
     // devide and concur
-    public ListNode mergeKLists(ListNode[] lists) {
+    public ListNode mergeKLists3(ListNode[] lists) {
         if (lists == null || lists.length == 0) {
             return null;
         }

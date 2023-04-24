@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.TreeProblems;
 
+import util.TreeNode;
+
 public class BinaryTreeMaximumPathSum {
     int result = Integer.MIN_VALUE;
     public int maxPathSum(TreeNode root) {

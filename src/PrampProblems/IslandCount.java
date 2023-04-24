@@ -1,5 +1,8 @@
 package PrampProblems;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class IslandCount {
 
     /*
@@ -28,7 +31,7 @@ output: 6 // since this is the number of islands in binaryMatrix.
           // See all 6 islands color-coded below.
      */
 
-    static void pushIfValid(Queue q,int row,int col,int x,int y) {
+    static void pushIfValid(Queue q, int row, int col, int x, int y) {
         if (x>=0 && x<row && y>=0 && y<col) {
             q.add(new int[] {x,y});
         }

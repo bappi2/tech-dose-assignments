@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.Graph.DFSProblems;
 
+import java.util.*;
+
 public class ReconstructItinerary {
     public List<String> findItinerary(String[][] tickets) {
         List<String> result = new ArrayList<>();

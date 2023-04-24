@@ -1,7 +1,6 @@
 package BLINDxx75xxProblems.Graph.BFSProblems;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class FindPathExistsinGraph {
     // https://leetcode.com/problems/find-if-path-exists-in-graph/description/

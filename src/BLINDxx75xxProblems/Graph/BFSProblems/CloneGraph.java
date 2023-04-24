@@ -1,5 +1,7 @@
 package BLINDxx75xxProblems.Graph.BFSProblems;
 
+import java.util.*;
+
 public class CloneGraph {
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
         if (node == null) {
@@ -33,4 +35,9 @@ public class CloneGraph {
 
         return newNode;
     }
+    class UndirectedGraphNode {
+      int label;
+      List<UndirectedGraphNode> neighbors;
+      UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
+  }
 }
