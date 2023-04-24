@@ -1,10 +1,7 @@
 package buttercodePractice.hashmap;
 
-import buttercodePractice.array.FourSum;
-
-import java.util.*;
-
 public class FourSumHashMap {
+    /*
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList<>();
         if (nums == null || nums.length < 4) {
@@ -63,4 +60,5 @@ public class FourSumHashMap {
         System.out.println(fshm.fourSum(nums, 0));
 
     }
+    */
 }

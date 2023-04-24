@@ -1,14 +1,15 @@
 package TrieProblems;
 
 public class WordDictionary {
+    /*
     TrieNode trie;
 
-    /** Initialize your data structure here. */
+    // Initialize your data structure here.
     public WordDictionary() {
         trie = new TrieNode();
     }
 
-    /** Adds a word into the data structure. */
+    // Adds a word into the data structure.
     public void addWord(String word) {
         TrieNode node = trie;
 
@@ -21,7 +22,7 @@ public class WordDictionary {
         node.word = true;
     }
 
-    /** Returns if the word is in the node. */
+    // Returns if the word is in the node.
     public boolean searchInNode(String word, TrieNode node) {
         for (int i = 0; i < word.length(); ++i) {
             char ch = word.charAt(i);
@@ -48,8 +49,10 @@ public class WordDictionary {
         return node.word;
     }
 
-    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    // Returns if the word is in the data structure.
+     A word could contain the dot character '.' to represent any one letter.
     public boolean search(String word) {
         return searchInNode(word, trie);
     }
+    */
 }
