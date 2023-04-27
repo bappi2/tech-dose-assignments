@@ -1,4 +1,4 @@
-package BinarySearch;
+package BLINDxx75xxProblems.BinarySearchProblems;
 
 
   /*  Given two integers dividend and divisor, divide two integers without using multiplication,

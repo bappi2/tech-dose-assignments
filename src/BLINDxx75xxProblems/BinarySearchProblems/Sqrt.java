@@ -1,4 +1,4 @@
-package BinarySearch;
+package BLINDxx75xxProblems.BinarySearchProblems;
 
 public class Sqrt {
     public int mySqrt(int x) {

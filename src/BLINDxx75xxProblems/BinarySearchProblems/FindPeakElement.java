@@ -1,4 +1,4 @@
-package BinarySearch;
+package BLINDxx75xxProblems.BinarySearchProblems;
 
 public class FindPeakElement {
 
