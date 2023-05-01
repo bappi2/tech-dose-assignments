@@ -105,10 +105,42 @@ public class ThreeSum {
         return result;
     }
 
+    public List<List<Integer>> threeSumBrute(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums);
+
+        for (int i = 0; i < nums.length -2; i++) {
+            if (i == 0 || nums[i-1] < nums[i]) {
+                for (int j = i+1; j < nums.length -1; j++) {
+                    if (j-1 == i || nums[j-1] < nums[j]) {
+                        for (int k = j +1 ; k < nums.length; k++) {
+                            if (k - 1 == j || nums[k-1] < nums[k]) {
+                                if (nums[i] + nums[j] + nums[k] == 0) {
+                                    List<Integer> curr = new ArrayList<>();
+                                    curr.add(nums[i]);
+                                    curr.add(nums[j]);
+                                    curr.add(nums[k]);
+
+                                    result.add(curr);
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+        return result;
+
+    }
+
     public static void main(String[] args) {
         ThreeSum ts = new ThreeSum();
         int [] nums = {-1,0,1,2,-1,-4};
 
-        System.out.println(ts.threeSumTest(nums));
+        System.out.println(ts.threeSumBrute(nums));
     }
 }

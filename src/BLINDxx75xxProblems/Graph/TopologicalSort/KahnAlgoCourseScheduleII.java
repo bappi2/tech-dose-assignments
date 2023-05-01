@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class KahnAlgoCourseScheduleII {
-    public boolean kahnsAlgo(List<List<Integer>> adj, int n, int[] indegree, List<Integer> ans) {
+    public static boolean kahnsAlgo(List<List<Integer>> adj, int n, int[] indegree, List<Integer> ans) {
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             if (indegree[i] == 0) {
