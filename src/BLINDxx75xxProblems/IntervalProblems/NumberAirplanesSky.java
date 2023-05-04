@@ -25,6 +25,7 @@ Notice
 If landing and taking off of different planes happen at the same time, we consider landing should happen at first.
  */
 public class NumberAirplanesSky {
+    // http://buttercola.blogspot.com/2019/03/lintcode-391-number-of-airplanes-in-sky.html
     public int countOfAirplanes(List<Interval> airplanes) {
         if (airplanes == null || airplanes.size() == 0) {
             return 0;

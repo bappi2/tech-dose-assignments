@@ -2,10 +2,11 @@ package BLINDxx75xxProblems.IntervalProblems;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class InsertIntervals {
-    // http://buttercola.blogspot.com/2019/03/lintcode-391-number-of-airplanes-in-sky.html
+    // https://leetcode.com/problems/insert-interval/
 
     // Returns true if the intervals a and b have a common element.
     boolean doesIntervalsOverlap(int[] a, int[] b) {
@@ -59,5 +60,38 @@ public class InsertIntervals {
         }
 
         return answer.toArray(new int[answer.size()][2]);
+    }
+
+    public static int[][] insert2(int[][] intervals, int[] newInterval) {
+
+        ArrayList<int[]> before = new ArrayList<>();
+        ArrayList<int[]> after = new ArrayList<>();
+
+        for(int[] interval : intervals){
+            if(interval[1] < newInterval[0]){
+                before.add(interval);
+            }else if(newInterval[1] < interval[0]){
+                after.add(interval);
+            }else{
+                // merge
+                newInterval[0] = Math.min(interval[0], newInterval[0]);
+                newInterval[1] = Math.max(interval[1], newInterval[1]);
+            }
+        }
+        ArrayList<int[]> result = new ArrayList<>();
+        result.addAll(before);
+        result.add(newInterval);
+        result.addAll(after);
+        return result.toArray(new int[result.size()][]);
+    }
+    public static void main(String[] args) {
+        int[][] intervals2 = new int[][]{
+                {1,3}, {5,7}, {9,10}
+        };
+        int[] newInterval = new int[]{2,4};
+
+        Arrays.sort(intervals2, Comparator.comparingInt(a -> a[0]));
+        System.out.println(Arrays.deepToString(intervals2));
+        System.out.println(Arrays.deepToString(insert2(intervals2, newInterval)));
     }
 }

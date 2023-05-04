@@ -1,8 +1,40 @@
 package BLINDxx75xxProblems.Graph.BFSProblems;
 
+import BLINDxx75xxProblems.Graph.Node;
+import BLINDxx75xxProblems.Graph.UndirectedGraphNode;
+
 import java.util.*;
 
 public class CloneGraph {
+
+    public Node cloneGraph(Node node) {
+        if (node == null) {
+            return null;
+        }
+        Map<Node, Node> map = new HashMap<>();
+        Node newNode = new Node(node.val);
+        map.put(node, newNode);
+        Queue<Node> queue = new LinkedList<>();
+
+        queue.offer(node);
+
+        while (!queue.isEmpty()) {
+            Node curr = queue.poll();
+            for (Node neighbors : curr.neighbors) {
+                if (map.containsKey(neighbors)) {
+                    map.get(curr).neighbors.add(map.get(neighbors));
+                }
+                else {
+                    Node copy = new Node(neighbors.val);
+                    map.put(neighbors, copy);
+                    map.get(curr).neighbors.add(copy);
+                    queue.offer(neighbors);
+                }
+            }
+        }
+        return newNode;
+    }
+
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
         if (node == null) {
             return null;
@@ -35,9 +67,6 @@ public class CloneGraph {
 
         return newNode;
     }
-    class UndirectedGraphNode {
-      int label;
-      List<UndirectedGraphNode> neighbors;
-      UndirectedGraphNode(int x) { label = x; neighbors = new ArrayList<UndirectedGraphNode>(); }
-  }
+
+
 }
