@@ -2,11 +2,17 @@ package BLINDxx75xxProblems.DynamicProgramming.DPONGrid;
 
 public class UniquePaths {
     // recursive
+    // f(i, j) = 1 if i == 1 || j == 1
+    // f(i, j) = f(i -1, j) + f (i, j -1)
+
     public int uniquePaths(int m, int n) {
-        if (m == 1 || n == 1) {
+        return f(m, n);
+    }
+    int f(int i, int j) {
+        if (i == 1 ||  j == 1) {
             return 1;
         }
-        return uniquePaths(m - 1, n) + uniquePaths(m, n - 1);
+        return f(i-1, j) + f (i, j-1);
     }
 
     // DP
