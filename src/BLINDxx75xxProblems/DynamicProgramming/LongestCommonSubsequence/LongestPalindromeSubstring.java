@@ -12,7 +12,8 @@ public class LongestPalindromeSubstring {
 
         for (int i = len - 1; i >= 0; i--) {
             for (int j = i; j < len; j++) {
-                if ((s.charAt(i) == s.charAt(j) && (j - i) < 2) || (s.charAt(i) == s.charAt(j) && palin[i + 1][j - 1])) {
+                if ((s.charAt(i) == s.charAt(j) && (j - i) < 2)
+                        || (s.charAt(i) == s.charAt(j) && palin[i + 1][j - 1])) {
                     palin[i][j] = true;
                     int temp = j - i + 1;
                     if (temp > maxLen) {
