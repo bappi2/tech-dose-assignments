@@ -47,7 +47,47 @@ public class ReconstructItinerary {
                 findItineraryHelper(neighbor, adjList, result);
             }
         }
-
         result.add(0, curr);
     }
+
+    public static void main(String[] args) {
+        ReconstructItinerary ri = new ReconstructItinerary();
+        String [][] tickets = new String[][] { {"MUC","LHR"},{"JFK","MUC"},{"SFO","SJC"},
+                {"LHR","SFO"}};
+        ri.findItinerary(tickets);
+    }
+    /*
+        public List<String> findItinerary(List<List<String>> tickets) {
+        Map<String, PriorityQueue<String>> adj = new HashMap<>();
+        List<String> ans = new ArrayList<>();
+        int n = tickets.size();
+        // Make graph
+        for (int i = 0; i < n; ++i) {
+            List<String> ticket = tickets.get(i);
+            String src = ticket.get(0);
+            String dst = ticket.get(1);
+            adj.putIfAbsent(src, new PriorityQueue<>());
+            adj.get(src).add(dst);
+        }
+
+        Stack<String> mystack = new Stack<>();
+        mystack.push("JFK"); // JFK is our fixed starting point
+        while (!mystack.empty()) {
+            String src = mystack.peek();
+            if (adj.get(src).size() == 0) { // No further travel possible
+                if (!mystack.empty()) {
+                    src = mystack.pop();
+                    ans.add(src);
+                }
+            } else {
+                String dst =  adj.get(src).poll();
+                mystack.push(dst);
+            }
+        }
+        Collections.reverse(ans);
+        return ans;
+    }
+     */
+
+
 }

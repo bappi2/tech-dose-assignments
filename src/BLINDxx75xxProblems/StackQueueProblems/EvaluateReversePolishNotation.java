@@ -13,7 +13,6 @@ public class EvaluateReversePolishNotation {
                 stack.push(Integer.valueOf(token));
                 continue;
             }
-
             int number2 = stack.pop();
             int number1 = stack.pop();
 
@@ -33,11 +32,8 @@ public class EvaluateReversePolishNotation {
                     result = number1 / number2;
                     break;
             }
-
             stack.push(result);
-
         }
-
         return stack.pop();
     }
 }
