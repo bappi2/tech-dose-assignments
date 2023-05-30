@@ -25,7 +25,6 @@ public class CourseSchedule {
                     return false;
                 }
             }
-
         }
         return true;
 

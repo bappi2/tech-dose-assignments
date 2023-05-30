@@ -1,4 +1,4 @@
-package ArrayProblems;
+package BLINDxx75xxProblems.ArrayProblems;
 
 import java.util.Arrays;
 
