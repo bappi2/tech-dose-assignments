@@ -1,6 +1,7 @@
 package BLINDxx75xxProblems.DynamicProgramming.LongestCommonSubsequence;
 
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class LongestIncreasingSubsequence {
     // Time complexity: O(N^2)
@@ -64,4 +65,37 @@ public class LongestIncreasingSubsequence {
         return dp[curr][prev+1] = Math.max(take, notTake);
     }
 
+    // =======
+    public int lengthOfLISRecur(int[] nums) {
+        AtomicInteger max = new AtomicInteger(0);
+        LISHelper2( nums.length -1, nums, max);
+        return max.get();
+    }
+    static int LISHelper2(int i, int [] nums, AtomicInteger max)
+    {
+        // Base case
+        if (i == 0) return 1;
+
+        // 'max_ending_here' is length of LIS ending with
+        int res, max_ending_here = 1;
+
+        for (int j = 0; j < i; j++) {
+            res = LISHelper2(i, nums, max);
+            if (nums[j ] < nums[i] && res + 1 > max_ending_here)
+                max_ending_here = res + 1;
+        }
+
+        // Compare max_ending_here with the overall max. And
+        // update the overall max if needed
+        if (max.get() < max_ending_here) max.set(max_ending_here);
+
+        // Return length of LIS ending with arr[n-1]
+        return max_ending_here;
+    }
+
+    public static void main(String[] args) {
+        int [] nums = new int[] {4, 6, 8, 2};
+        LongestIncreasingSubsequence lis = new LongestIncreasingSubsequence();
+        System.out.println(lis.lengthOfLISRecur(nums));
+    }
 }
