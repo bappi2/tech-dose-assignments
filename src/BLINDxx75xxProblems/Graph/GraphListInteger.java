@@ -8,7 +8,7 @@ public class GraphListInteger {
     private List<List<Integer>> adjacencyList;
 
     public GraphListInteger(int numNodes) {
-        adjacencyList = new ArrayList<>();
+        adjacencyList = new ArrayList<>(numNodes);
         for (int i = 0; i < numNodes; i++) {
             adjacencyList.add(new ArrayList<>());
         }
