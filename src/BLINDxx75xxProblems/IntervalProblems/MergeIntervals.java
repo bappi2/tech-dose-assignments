@@ -1,20 +1,16 @@
 package BLINDxx75xxProblems.IntervalProblems;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedList;
+import java.util.*;
 
 public class MergeIntervals {
     public int[][] merge(int[][] intervals) {
-        LinkedList<int[]> result = new LinkedList<>();
+        List<int[]> result = new ArrayList<>();
         Arrays.sort(intervals, (a, b) -> Integer.valueOf(a[0] - b[0]));
         int [] prev = intervals[0];
         for (int i=1; i < intervals.length; i++) {
             int [] curr = intervals[i];
             if (isOverlapping(curr, prev)) {
-                prev[0] = prev[0];
                 prev[1] = Math.max(curr[1], prev[1]);
-
             }
             else {
                 result.add(prev);
