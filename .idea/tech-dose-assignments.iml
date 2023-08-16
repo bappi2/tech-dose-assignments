@@ -27,5 +27,7 @@
     <orderEntry type="library" name="guava-31.0-jre" level="project" />
     <orderEntry type="library" name="jersey-guava-2.26-b03" level="project" />
     <orderEntry type="library" name="resteasy-client-6.0.0.Final" level="project" />
+    <orderEntry type="library" name="json" level="project" />
+    <orderEntry type="library" name="apache.httpcomponents.httpclient" level="project" />
   </component>
 </module>

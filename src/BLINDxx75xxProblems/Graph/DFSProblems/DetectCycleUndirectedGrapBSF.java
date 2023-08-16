@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class DetectCycleUndirectedGraph2 {
+public class DetectCycleUndirectedGrapBSF {
     public boolean isCycle(int V, List<List<Integer>> adj) {
         int [] visited = new int[V];
         Arrays.fill(visited, 0);
@@ -12,27 +12,9 @@ public class DetectCycleUndirectedGraph2 {
 
         for (int i = 0; i < V; i++) {
             if (visited[i] == 0) {
-                if (dfsUtil(adj, visited, i, -1)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    private boolean dfsUtil(List<List<Integer>> adj, int[] visited, int node, int parent) {
-        visited[node] = 1;
-        for (int neighbor: adj.get(node)) {
-            if (visited[neighbor] == 0) {
-                if (dfsUtil(adj, visited, neighbor, node)) {
-                    return true;
-                }
-            }
-            // If an adjacent is visited and not parent of current
-            // vertex, then there is a cycle.
-            // we have reached another node which is not parent
-            else if (neighbor != parent) {
-                return true;
+                //if (bfsUtil(adj, visited, i, -1)) {
+                //    return true;
+                //}
             }
         }
         return false;
