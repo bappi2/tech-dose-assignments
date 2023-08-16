@@ -29,5 +29,6 @@
     <orderEntry type="library" name="resteasy-client-6.0.0.Final" level="project" />
     <orderEntry type="library" name="json" level="project" />
     <orderEntry type="library" name="apache.httpcomponents.httpclient" level="project" />
+    <orderEntry type="library" name="fasterxml.jackson.core.databind" level="project" />
   </component>
 </module>
