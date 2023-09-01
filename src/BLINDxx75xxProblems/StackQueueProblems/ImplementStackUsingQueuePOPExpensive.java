@@ -58,7 +58,7 @@ class ImplementStackUsingQueuePOPExpensive {
         }
     }
 
-    public class Main {
+     /*class Main {
         public static void main(String[] args) {
             ImplementStackUsingQueuePOPExpensive s = new ImplementStackUsingQueuePOPExpensive();
             s.push(1);
@@ -74,6 +74,4 @@ class ImplementStackUsingQueuePOPExpensive {
             System.out.println(s.top());
             System.out.println("current size: " + s.size());
         }
-    }
-
-}
+    }*/
