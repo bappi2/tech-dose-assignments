@@ -1,3 +1,29 @@
+
+## Sliding Window  
+* Fixed Window: Check PermutationSubstring
+* Variable Window: Check LongestSubstringWithoutRepeatingCharacters
+Window elements always satisfy the core business logic. As long as that is not satisfied, move the window.
+```agsl
+publid fn(int[] arr){
+    
+    int left = 0;
+    int current = 0;
+    int result = 0;
+    
+    for(int right = 0; right < arr.length; right++){
+        // some logic to add arr[right] to current
+        
+        while( AS LONG AS WINDOW CONDITION IS BROKEN ){
+            // REMOVE arr[left] from current
+            left++;
+        }
+        
+        // update result
+    }
+    return result;
+}
+```
+
 ## Sliding Window Template
 
 This is a general code template for solving sliding window problems in Java. You can use this template as a starting point for various sliding window problems.
