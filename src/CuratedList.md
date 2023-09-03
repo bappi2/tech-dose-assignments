@@ -19,11 +19,9 @@
 
 <summary><strong>2. Sliding Window</strong></summary>
 
-- [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
-- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [Average of any contiguous subarray of size k](https://leetcode.com/problems/maximum-average-subarray-i/)
+- [Maximum sum of any contiguous subarray of size k](https://github.com/bappi2/tech-dose-assignments/blob/main/src/BLINDxx75xxProblems/SlidingWindowTechnique/MaxSumSubarrayOfSizeK.java)
 - [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)
-- [Maximum sum of any contiguous subarray of size k](src/BLINDxx75xxProblems/SlidingWindowTechnique/MaxSumSubarrayOfSizeK.java)
 - [Smallest subarray with a given sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - [Longest substring with k distinct characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 - [Fruits into baskets](https://leetcode.com/problems/fruit-into-baskets/)
@@ -31,6 +29,7 @@
 - [Longest substring after k replacements](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - [Permutation in string](https://leetcode.com/problems/permutation-in-string/)
 - [String anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+- [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 </details>
 
 <details>
@@ -42,7 +41,6 @@
 - [One Edit Distance](https://leetcode.com/problems/edit-distance/)
 - [3Sum](https://leetcode.com/problems/3sum/)
 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
-- [Longest Substring without repeating characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [Two Sum I and II](https://leetcode.com/problems/two-sum/)
 - [Implement strstr()](https://leetcode.com/problems/implement-strstr/)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
