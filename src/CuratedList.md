@@ -19,8 +19,11 @@
 
 <summary><strong>2. Sliding Window</strong></summary>
 
+- [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 - [Average of any contiguous subarray of size k](https://leetcode.com/problems/maximum-average-subarray-i/)
-- [Maximum sum of any contiguous subarray of size k](https://leetcode.com/problems/maximum-subarray/)
+- [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)
+- [Maximum sum of any contiguous subarray of size k](src/BLINDxx75xxProblems/SlidingWindowTechnique/MaxSumSubarrayOfSizeK.java)
 - [Smallest subarray with a given sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - [Longest substring with k distinct characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 - [Fruits into baskets](https://leetcode.com/problems/fruit-into-baskets/)
