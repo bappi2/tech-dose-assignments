@@ -1,7 +1,7 @@
 <details>
 <summary><strong>1. Graph Series : Top Graph Interview Questions</strong></summary>
 <details>
-<summary>Introduction to Graph</strong></summary>
+<summary>1.1 Introduction to Graph</strong></summary>
 
 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
@@ -15,7 +15,20 @@
 </details>
 
 <details>
-<summary><strong>Problems on BFS/DFS</strong></summary>
+<summary>1.2 Union Find and Related Problems</summary>
+
+- [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+- [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+- [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/)
+
+</details>
+
+<details>
+<summary>1.3 Problems on BFS/DFS</summary>
 
 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
@@ -29,7 +42,7 @@
 </details>
 
 <details>
-<summary><strong>Problems on Topo Sort</strong></summary>
+<summary>1.4 Problems on Topo Sort</summary>
 
 - [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 - [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
@@ -59,6 +72,7 @@
 - [Permutation in string](https://leetcode.com/problems/permutation-in-string/)
 - [String anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 </details>
 
 <details>
@@ -109,7 +123,6 @@
 <summary><strong>4. String</strong></summary>
 
 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
-- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 - [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
 - [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
