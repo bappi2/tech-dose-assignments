@@ -39,7 +39,7 @@
 <summary><strong>3.2 Leetcode 150 Array</strong></summary>
 
 - [Missing Ranges](https://leetcode.com/problems/missing-ranges/)
-- [One Edit Distance](https://leetcode.com/problems/edit-distance/)
+- [One Edit Distance](https://leetcode.com/problems/one-edit-distance/description/)
 - [Implement strstr()](https://leetcode.com/problems/implement-strstr/)
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 - [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
@@ -57,7 +57,6 @@
 - [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)
 - [Gas Station](https://leetcode.com/problems/gas-station/description/)
 - [135. Candy](https://leetcode.com/problems/candy/description/)
-- [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
 - [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
 - [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/)
 </details>
@@ -75,12 +74,10 @@
 <details>
 <summary><strong>3.4. Two pointers</strong></summary>
 
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - [3Sum](https://leetcode.com/problems/3sum/)
 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
-- [Remove duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - [Squaring a sorted array](https://leetcode.com/problems/squares-of-a-sorted-array/)
 - [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 
@@ -91,9 +88,7 @@
 
 - [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 - [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-- [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/)
-- [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/)
-- [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
+
 </details>
 
 </details>
@@ -101,15 +96,9 @@
 <summary><strong>4. String</strong></summary>
 
 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
-- [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
-- [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
-- [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
-- [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
-
 - [937. Reorder Data in Log Files](https://leetcode.com/problems/reverse-linked-list-ii/description/)
 
 </details>

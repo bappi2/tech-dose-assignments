@@ -1,0 +1,1 @@
+https://serhatgiydiren.com/step-by-step-tech-interview-preparation-guide/

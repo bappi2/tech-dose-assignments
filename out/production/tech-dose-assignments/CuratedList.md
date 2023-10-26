@@ -1,48 +1,3 @@
-<details>
-<summary><strong>1. Graph Series : Top Graph Interview Questions</strong></summary>
-<details>
-<summary>Introduction to Graph</strong></summary>
-
-- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
-- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
-- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
-- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
-- [Clone Graph](https://leetcode.com/problems/clone-graph/)
-- [Course Schedule](https://leetcode.com/problems/course-schedule/)
-- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
-- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
-
-</details>
-
-<details>
-<summary><strong>Problems on BFS/DFS</strong></summary>
-
-- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
-- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
-- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
-- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
-- [Clone Graph](https://leetcode.com/problems/clone-graph/)
-- [Course Schedule](https://leetcode.com/problems/course-schedule/)
-- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
-- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
-
-</details>
-
-<details>
-<summary><strong>Problems on Topo Sort</strong></summary>
-
-- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
-- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
-- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
-- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
-- [Clone Graph](https://leetcode.com/problems/clone-graph/)
-- [Course Schedule](https://leetcode.com/problems/course-schedule/)
-- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
-- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
-
-</details>
-
-</details>
 
 <details>
 
@@ -59,30 +14,55 @@
 - [Permutation in string](https://leetcode.com/problems/permutation-in-string/)
 - [String anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 </details>
-
 <details>
 <summary><strong>3. Array And HashMap</strong></summary>
 <details>
-<summary><strong>3.1 Array</strong></summary>
+<summary><strong>3.1 Neetcode Array</strong></summary>
 
-- [Missing Ranges](https://leetcode.com/problems/missing-ranges/)
-- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-- [One Edit Distance](https://leetcode.com/problems/edit-distance/)
-- [Two Sum I and II](https://leetcode.com/problems/two-sum/)
-- [Implement strstr()](https://leetcode.com/problems/implement-strstr/)
-- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-- [Product of Array](https://leetcode.com/problems/product-of-array-except-self/)
-- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+- [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
+- [Valid Anagram](https://leetcode.com/problems/valid-anagram/description/)
+- [Two Sum](https://leetcode.com/problems/two-sum/description/)
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/)
+- [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)
+- [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/description/)
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 - [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
 - [Reverse Words in String](https://leetcode.com/problems/reverse-words-in-a-string/)
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-- [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 </details>
 
 <details>
-<summary><strong>3.2 Interval</strong></summary>
+<summary><strong>3.2 Leetcode 150 Array</strong></summary>
+
+- [Missing Ranges](https://leetcode.com/problems/missing-ranges/)
+- [One Edit Distance](https://leetcode.com/problems/one-edit-distance/description/)
+- [Implement strstr()](https://leetcode.com/problems/implement-strstr/)
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+- [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/)
+
+
+- [Remove Element](https://leetcode.com/problems/remove-element/description/)
+- [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+- [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)
+- [Majority Element](https://leetcode.com/problems/majority-element/description/)
+- [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
+- [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
+- [Jump Game](https://leetcode.com/problems/jump-game/description/)
+- [Jump Game II](https://leetcode.com/problems/jump-game-ii/description/)
+- [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/description/)
+- [Gas Station](https://leetcode.com/problems/gas-station/description/)
+- [135. Candy](https://leetcode.com/problems/candy/description/)
+- [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/)
+- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/)
+</details>
+
+<details>
+<summary><strong>3.3 Interval</strong></summary>
 
 - [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 - [Insert Interval](https://leetcode.com/problems/insert-interval/)
@@ -92,33 +72,92 @@
 </details>
 
 <details>
-<summary><strong>3.3. Two pointers</strong></summary>
+<summary><strong>3.4. Two pointers</strong></summary>
 
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - [3Sum](https://leetcode.com/problems/3sum/)
 - [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 - [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
-- [Remove duplicates](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 - [Squaring a sorted array](https://leetcode.com/problems/squares-of-a-sorted-array/)
+- [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/description/)
 
 </details>
+
+<details>
+<summary><strong>3.5 Binary Search </strong></summary>
+
+- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+
 </details>
 
+</details>
 <details>
 <summary><strong>4. String</strong></summary>
 
 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
-- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
-- [Valid Anagram](https://leetcode.com/problems/valid-anagram/)
-- [Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 - [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
-- [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
-- [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+- [937. Reorder Data in Log Files](https://leetcode.com/problems/reverse-linked-list-ii/description/)
 
+</details>
+
+<details>
+<summary><strong>1. Graph Series : Top Graph Interview Questions</strong></summary>
+<details>
+<summary>1.1 Introduction to Graph</strong></summary>
+
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [Course Schedule](https://leetcode.com/problems/course-schedule/)
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+
+</details>
+
+<details>
+<summary>1.2 Union Find and Related Problems</summary>
+
+- [Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+- [Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+- [Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/)
+
+</details>
+
+<details>
+<summary>1.3 Problems on BFS/DFS</summary>
+
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [Course Schedule](https://leetcode.com/problems/course-schedule/)
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+
+</details>
+<details>
+<summary>1.4 Problems on Topo Sort</summary>
+
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
+- [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
+- [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/)
+- [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/)
+- [Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [Course Schedule](https://leetcode.com/problems/course-schedule/)
+- [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+- [Number of Islands](https://leetcode.com/problems/number-of-islands/)
+
+</details>
 </details>
 
 <details>
@@ -176,9 +215,6 @@
 - [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/)
 
 </details>
-
-
-
 <details>
 <summary><strong>13. Linked List</strong></summary>
 
@@ -188,7 +224,10 @@
 - [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
 - [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
-
+- [LRU Cache](https://leetcode.com/problems/lru-cache/description/)
+- [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+- [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
+- [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)
 </details>
 
 <details>

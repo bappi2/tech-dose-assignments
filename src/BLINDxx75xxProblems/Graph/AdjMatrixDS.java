@@ -129,7 +129,6 @@ public class AdjMatrixDS {
                 }
             }
         }
-
         visited[currentVertex] = false;
     }
 
