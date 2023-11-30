@@ -142,6 +142,38 @@ public class AdjMatrixDS {
         return false;
     }
 
+    public boolean hasCycleDirected() {
+        int[] visited = new int[numVertices];
+        for (int i = 0; i < numVertices; i++) {
+            if (visited[i] == 0 && hasCycleUtilDirected(i, visited)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean hasCycleUtilDirected(int currentVertex, int[] visited) {
+        if (visited[currentVertex] == 1) {
+            return true;
+        }
+        else if (visited[currentVertex] == 2) {
+            return false;
+        }
+        else {
+            visited[currentVertex] = 1;
+
+            for (int i = 0; i < numVertices; i++) {
+                if (adjMatrix[currentVertex][i] == 1 && visited[i] == 0) {
+                    if (hasCycleUtilDirected(i, visited)) {
+                        return true;
+                    }
+                }
+            }
+            visited[currentVertex] = 2;
+        }
+        return false;
+    }
+
     private boolean hasCycleUtil(int currentVertex, boolean[] visited, int parent) {
         visited[currentVertex] = true;
 

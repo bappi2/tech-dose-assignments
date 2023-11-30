@@ -1,7 +1,7 @@
 
 <details>
 
-<summary><strong>2. Sliding Window</strong></summary>
+<summary><strong>1. Sliding Window</strong></summary>
 
 - [Average of any contiguous subarray of size k](https://leetcode.com/problems/maximum-average-subarray-i/)
 - [Maximum sum of any contiguous subarray of size k](https://github.com/bappi2/tech-dose-assignments/blob/main/src/BLINDxx75xxProblems/SlidingWindowTechnique/MaxSumSubarrayOfSizeK.java)
@@ -15,6 +15,20 @@
 - [String anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 - [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+</details>
+
+<details>
+
+<summary><strong>2. Binary Search </strong></summary>
+
+- [Binary Search](https://leetcode.com/problems/binary-search/description/)
+- [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/)
+- [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/)
+- [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
+- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
+- [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/)
+- [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/description/)
+- [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
 </details>
 <details>
 <summary><strong>3. Array And HashMap</strong></summary>
@@ -83,13 +97,7 @@
 
 </details>
 
-<details>
-<summary><strong>3.5 Binary Search </strong></summary>
 
-- [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
-- [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-
-</details>
 
 </details>
 <details>
@@ -188,11 +196,7 @@
 <details>
 <summary><strong>8. Fast & Slow pointers</strong></summary>
 
-- [Linked list cycle](https://leetcode.com/problems/linked-list-cycle/)
 - [Happy number](https://leetcode.com/problems/happy-number/)
-- [Middle of a linked list](https://leetcode.com/problems/middle-of-the-linked-list/)
-- [Palindrome linked list](https://leetcode.com/problems/palindrome-linked-list/)
-- [Reorder a linked list](https://leetcode.com/problems/reorder-list/)
 
 </details>
 
@@ -205,8 +209,6 @@
 
 </details>
 
-
-
 <details>
 <summary><strong>11. Greedy algorithms</strong></summary>
 
@@ -218,16 +220,21 @@
 <details>
 <summary><strong>13. Linked List</strong></summary>
 
-- [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
-- [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
-- [Reorder List](https://leetcode.com/problems/reorder-list/)
 - [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/)
-- [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [Reorder List](https://leetcode.com/problems/reorder-list/)
+- [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
+- [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/)
 - [LRU Cache](https://leetcode.com/problems/lru-cache/description/)
 - [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
 - [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
 - [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)
+- [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+- [708. Insert into a Sorted Circular Linked List](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/description/)
+- [Palindrome linked list](https://leetcode.com/problems/palindrome-linked-list/)
+
+
 </details>
 
 <details>
