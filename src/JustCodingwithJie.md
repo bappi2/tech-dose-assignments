@@ -1,7 +1,7 @@
 
 <details>
 
-<summary><strong>1. Just Coding, With Jie</strong></summary>
+<summary><strong>Part 1. Just Coding, With Jie</strong></summary>
 
 - [1762. Buildings With an Ocean View](https://leetcode.com/problems/buildings-with-an-ocean-view/description/)
 - [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/)
@@ -24,9 +24,15 @@
 </details>
 
 <details>
-<summary><strong>Extra Sliding Window</strong></summary>
+<summary><strong>Part 2. Just Coding, With Jie</strong></summary>
 
-- [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
-- [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+- [791. Custom Sort String](https://leetcode.com/)
+- [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/)
+- [498. Diagonal Traverse](https://leetcode.com/)
+- [50. Pow(x, n)](https://leetcode.com/)
+- [938. Range Sum of BST]
+- [2060. Check if an Original String Exists Given Two Encoded Strings]
+- [346. Moving Average from Data Stream]
+- [523. Continuous Subarray Sum]
 
 </details>
