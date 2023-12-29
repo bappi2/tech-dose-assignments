@@ -29,8 +29,8 @@
 - [791. Custom Sort String](https://leetcode.com/)
 - [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/)
 - [498. Diagonal Traverse](https://leetcode.com/)
-- [50. Pow(x, n)](https://leetcode.com/)
-- [938. Range Sum of BST]
+- [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+- [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/description/)
 - 
 - [2060. Check if an Original String Exists Given Two Encoded Strings]
 - [346. Moving Average from Data Stream]
