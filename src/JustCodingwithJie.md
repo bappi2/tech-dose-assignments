@@ -38,12 +38,12 @@
 - [199. Binary Tree Right Side View]
 - [173. Binary Search Tree Iterator]
 - 
-- [215. Kth Largest Element in an Array]
-- [138. Copy List with Random Pointer]
+- [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
+- [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
 - [162. Find Peak Element]
 - [1216. Valid Palindrome III]
 - [973. K Closest Points to Origin]
-- [560. Subarray Sum Equals K]
+
 
 </details>
 
