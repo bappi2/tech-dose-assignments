@@ -159,6 +159,24 @@ public int dp(int[] arr) {
     return dp[arr.length];
 }
 ```
+## Sliding Window Fixed Window
+* Fixed Window: Check PermutationSubstring, Maximum Average Subarray I
+* Variable Window: Check LongestSubstringWithoutRepeatingCharacters
+  Window elements always satisfy the core business logic. As long as that is not satisfied, move the window.
+```agsl
+   public double findMaxAverage(int[] nums, int k) {
+        int sum = 0; 
+        for (int i = 0; i < k; i++) {
+            sum += nums[i];
+        }
+        int result = sum; 
+        for (int i = k; i < nums.length; i++) {
+            sum = sum - nums[i -k] + nums[i]; 
+            result = Math.max(result, sum); 
+        }
+        return result * 1.0 / k;
+    }
+```
 ## Sliding Window
 * Fixed Window: Check PermutationSubstring
 * Variable Window: Check LongestSubstringWithoutRepeatingCharacters

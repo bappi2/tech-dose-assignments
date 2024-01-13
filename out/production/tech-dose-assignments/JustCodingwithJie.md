@@ -12,7 +12,7 @@
 - [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/)
 - [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/description/)
 - [339. Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/description/)
-- [528. Random Pick with Weight (prefix)](https://leetcode.com/problems/random-pick-with-weight/description/)
+- [528. Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/description/)
 - [71. Simplify Path](https://leetcode.com/problems/simplify-path/description/)
 - 
 - [249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings/description/)
@@ -67,27 +67,16 @@
 - [958. Check Completeness of a Binary Tree]
 - [827. Making A Large Island]
 - [347. Top K Frequent Elements]
+- 
+- [163. Missing Ranges]
+- [689. Maximum Sum of 3 Non-Overlapping Subarrays]
+
 </details>
 
 <details>
 <summary><strong>Part 4. Just Coding, With Jie</strong></summary>
 
-- [419. Battleships in a Board]
 - [163. Missing Ranges]
 - [689. Maximum Sum of 3 Non-Overlapping Subarrays]
-- [543. Diameter of Binary Tree]
-- [691. Stickers to Spell Word]
-- [1123. Lowest Common Ancestor of Deepest Leaves (top down O(n))]
-- 
-- [1424. Diagonal Traverse II]
-- [2210. Count Hills and Valleys in an Array]
-- [529. Minesweeper]
-- [896. Monotonic Array]
-- [57. Insert Interval]
-- 
-- [931. Minimum Falling Path Sum]
-- [1340. Jump Game V]
-- [206. Reverse Linked List]
-- [232. Implement Queue using Stacks]
-- [225. Implement Stack using Queues]
+
 </details>

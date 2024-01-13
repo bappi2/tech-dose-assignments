@@ -1,6 +1,13 @@
 # tech-dose-assignments
 
 https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/
+https://github.com/Java-Techie-jt
+https://github.com/basanta-spring-boot
+https://github.com/iamkhs/Head-First-Java
+https://docs.google.com/spreadsheets/d/1gy9cmPwNhZvola7kqnfY3DElk7PYrz2ARpaCODTp8Go/edit#gid=0
+https://github.com/lokeshgupta1981/Spring-Cloud
+https://github.com/Eric-programming/CodeSolution/blob/master/src/Object_Oriented_Programming/Abstraction/Abstraction.java
+
 
 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
 
