@@ -55,7 +55,6 @@ public class RemoveInvalidParentheses {
             }
         }
     }
-}
 
 private boolean isBalanced(StringBuilder sb) {
     int left = 0, right = 0;
