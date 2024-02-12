@@ -1,3 +1,13 @@
+
+## Question: In an interval problem, how to know whether to sort by start time or by end time?
+The decision to sort by start time or end time in an interval problem depends on the specific requirements of the problem. Here are some general guidelines:
+
+* Sort by Start Time: If you're merging intervals or looking for overlapping intervals, you'll typically sort by start time. This allows you to easily compare the end time of the current interval with the start time of the next interval to see if they overlap.
+
+* Sort by End Time: If you're trying to find the maximum number of non-overlapping intervals (like in the activity selection problem), you'll typically sort by end time. This allows you to pick the interval that ends the earliest, ensuring you have the maximum amount of time left for the remaining intervals.
+
+Remember, these are just general guidelines. The specific problem you're trying to solve could require a different approach. Always make sure to understand the problem requirements fully before deciding on your strategy.
+
 The merge intervals problem is a common coding problem that involves dealing with intervals of numbers and merging overlapping ones. The problem can be solved using various algorithms, and it's a great exercise to improve your skills in sorting, array manipulation, and interval handling.
 Here's a general description of the problem:
 
@@ -47,12 +57,3 @@ By iterating through the sorted intervals and counting non-overlapping intervals
 To illustrate this with an example, consider the input intervals [[1,4],[2,3],[3,5],[6,7]].
 When sorted by end times, the intervals become [[2,3],[1,4],[3,5],[6,7]]. By choosing the intervals with the earliest end times, you can keep [[2,3],[6,7]], which don't overlap. The minimum number of intervals to remove is 2 (i.e., [1,4] and [3,5]).
 
-
-## Question: In an interval problem, how to know whether to sort by start time or by end time?
-The decision to sort by start time or end time in an interval problem depends on the specific requirements of the problem. Here are some general guidelines:
-
-* Sort by Start Time: If you're merging intervals or looking for overlapping intervals, you'll typically sort by start time. This allows you to easily compare the end time of the current interval with the start time of the next interval to see if they overlap.
-
-* Sort by End Time: If you're trying to find the maximum number of non-overlapping intervals (like in the activity selection problem), you'll typically sort by end time. This allows you to pick the interval that ends the earliest, ensuring you have the maximum amount of time left for the remaining intervals.
-
-Remember, these are just general guidelines. The specific problem you're trying to solve could require a different approach. Always make sure to understand the problem requirements fully before deciding on your strategy.

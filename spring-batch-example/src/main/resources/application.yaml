@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/catalog
+    username: root
+    password: my_secret_pw
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+  batch:
+    job:
+      enabled: false
+
+    jdbc:
+      initialize-schema: always
+
+server:
+  port: 9191
+
