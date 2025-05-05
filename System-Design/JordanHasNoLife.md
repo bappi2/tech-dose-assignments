@@ -10,13 +10,13 @@ Link: [Jordan has no life - Slides](https://www.google.com/url?q=https://www.go
 Systems are designed with the intent of being:
 
 *   Reliable
-*   Working in the face of faults, both hardware and software
+      * Working in the face of faults, both hardware and software
 *   Scalable
-*   Working as the system grows in both users, traffic, and data
-*   Horizontal scaling is adding more of an existing resource
-*   Vertical scaling is adding more power, such as different hardware
+      * Working as the system grows in both users, traffic, and data
+      * Horizontal scaling is adding more of an existing resource
+      * Vertical scaling is adding more power, such as different hardware
 *   Maintainable
-*   Easy to add different parts to the system and coordinate with other developers
+      * Easy to add different parts to the system and coordinate with other developers
 
 
 
