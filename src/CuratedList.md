@@ -5,7 +5,7 @@
 
 - [Average of any contiguous subarray of size k](https://leetcode.com/problems/maximum-average-subarray-i/)
 - [Maximum sum of any contiguous subarray of size k](https://github.com/bappi2/tech-dose-assignments/blob/main/src/BLINDxx75xxProblems/SlidingWindowTechnique/MaxSumSubarrayOfSizeK.java)
-- [Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)
+- [2461 Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)
 - [Smallest subarray with a given sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
 - [Longest substring with k distinct characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
 - [Fruits into baskets](https://leetcode.com/problems/fruit-into-baskets/)
