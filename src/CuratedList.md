@@ -3,7 +3,7 @@
 
 <summary><strong>1. Sliding Window</strong></summary>
 
-- [Average of any contiguous subarray of size k](https://leetcode.com/problems/maximum-average-subarray-i/)
+- [643. Maximum Average Subarray of size k](https://leetcode.com/problems/maximum-average-subarray-i/)
 - [Maximum sum of any contiguous subarray of size k](https://github.com/bappi2/tech-dose-assignments/blob/main/src/BLINDxx75xxProblems/SlidingWindowTechnique/MaxSumSubarrayOfSizeK.java)
 - [2461 Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/)
 - [Smallest subarray with a given sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
