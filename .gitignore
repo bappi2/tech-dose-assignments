@@ -1,3 +1,6 @@
+# macOS system file
+.DS_Store
+
 # Compiled class file
 *.class
 
@@ -22,10 +25,8 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# Intellij
-.DS_Store/
-.DS_Store
-.idea
-target/
+# IntelliJ IDEA
+.idea/
 *.iml
 *.iws
+target/
