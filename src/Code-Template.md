@@ -511,3 +511,27 @@ public int[] fn(int[] arr, int k) {
         return result; 
     }
 ```
+
+## Custom Comparator
+```agsl
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+    // Min Heap (default behavior)
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+    // Custom Comparator with Lambda
+    PriorityQueue<Integer> absHeap = new PriorityQueue<>(
+        (a, b) -> Integer.compare(Math.abs(a), Math.abs(b))
+    );
+    Map<Integer, Integer> freq = new HashMap<>();
+    for (int num : arr) {
+        freq.put(num, freq.getOrDefault(num, 0) + 1);
+    }
+    // Comparator with Tie-Breaking
+    PriorityQueue<Integer> pq = new PriorityQueue<>(
+        (a, b) -> {
+            if (freq.get(a).equals(freq.get(b))) {
+                return Integer.compare(a, b); // tie-break by value
+            }
+            return freq.get(b) - freq.get(a); // higher frequency first
+        }
+    );
+```
