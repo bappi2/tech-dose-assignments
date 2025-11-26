@@ -202,3 +202,88 @@
             && isValidBST(root.right, root.val, max);
     }
 ```
+### 226. Invert Binary Tree
+```agsl
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) 
+            return null; 
+        else {
+            TreeNode left = invertTree(root.left); 
+            TreeNode right = invertTree(root.right);
+
+            root.left = right; 
+            root.right = left; 
+            return root;
+        }
+    }
+```
+### 104. Maximum Depth of Binary Tree
+```agsl
+  public int maxDepth(TreeNode root) {
+      if (root == null) return 0; 
+      else return 1 + Math.max(maxDepth(root.left), maxDepth(root.right));
+    }
+```
+### 543. Diameter of Binary Tree
+```agsl
+    public int diameterOfBinaryTree(TreeNode root) {
+        if (root == null) return 0;
+        int [] max = new int[1]; 
+        maxDepth(root, max); 
+        return max[0];
+    }
+
+    int maxDepth(TreeNode node, int[] max) {
+        if (node == null) return 0;
+        int left = maxDepth(node.left, max); 
+        int right = maxDepth(node.right, max); 
+        max[0] = Math.max(max[0], left + right);
+        return 1 + Math.max(left, right);
+    }
+```
+### 100. Same Tree
+``` agsl
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if (p == null) return q == null; 
+        else if (q == null || p.val != q.val) return false; 
+        else return isSameTree(p.left, q.left) && isSameTree(p.right, q.right); 
+    }
+```
+### 235. Lowest Common Ancestor of a Binary Search Tree
+```agsl
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (Math.max(p.val, q.val) < root.val) return lowestCommonAncestor(root.left, p, q);
+        else if (Math.min(p.val, q.val) > root.val) return lowestCommonAncestor(root.right, p, q);
+        elsen return root;
+    }
+```
+### 112. Path Sum
+```agsl 
+    public boolean hasPathSum(TreeNode root, int targetSum) {
+        if (root == null) return false; 
+        else if (root.val == targetSum && root.left == null && root.right == null) return true; 
+        else return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val);
+    }
+```
+### 113. Path Sum II
+```agsl 
+    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
+        List<List<Integer>> result= new ArrayList<>(); 
+        List<Integer> path = new ArrayList<>(); 
+        backTrack(root, targetSum, path, result); 
+        return result; 
+    }
+    void backTrack(TreeNode root, int targetSum, List<Integer> path , List<List<Integer>> result) {
+        if (root == null) return; 
+        path.add(root.val); 
+        if (root.val == targetSum && root.left == null && root.right == null) {
+            result.add(new ArrayList<>(path)); 
+        }
+        else {
+             backTrack(root.left, targetSum - root.val, path, result); 
+             backTrack(root.right, targetSum - root.val, path, result); 
+        }
+        path.remove(path.size() - 1);
+
+    }
+```
