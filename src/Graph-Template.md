@@ -205,3 +205,71 @@ class Solution {
      }
 }
 ```
+### 207. Course Schedule
+```agsl 
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> adjList = new ArrayList<>(numCourses); 
+        for (int i = 0; i < numCourses; i++) {
+            adjList.add(new ArrayList<>());
+        }
+        int[] in = new int[numCourses];
+        for (int[] preReq : prerequisites) {
+            adjList.get(preReq[1]).add(preReq[0]);
+            in[preReq[0]]++;
+        }
+        Deque<Integer> queue = new ArrayDeque<>(); 
+        for (int i = 0; i < numCourses; i++) {
+            if (in[i] == 0) queue.offer(i);
+        }
+        int taken = 0; 
+        while (!queue.isEmpty()) {
+            int course = queue.poll(); 
+            taken++; 
+            for (int neighbor : adjList.get(course)) {
+                in[neighbor]--; 
+                if (in[neighbor] == 0) {
+                    queue.offer(neighbor);
+                }
+            }
+        }
+        return taken == numCourses;
+    }
+```
+### 210. Course Schedule II
+```agsl
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        List<List<Integer>> adjList = new ArrayList<>(); 
+        for (int i =0; i < numCourses; i++) {
+            adjList.add(new ArrayList<>()); 
+        }
+        int[] indegree = new int[numCourses]; 
+        int[] result = new int[numCourses]; 
+        for (int[] preReq : prerequisites) {
+            adjList.get(preReq[1]).add(preReq[0]);
+            indegree[preReq[0]]++;
+        }
+        Queue<Integer> queue = new LinkedList<>(); 
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0) {
+                queue.offer(i);
+            }
+        }
+        int count = 0; 
+        while (!queue.isEmpty()) {
+            int current = queue.poll(); 
+            for (int neighbor : adjList.get(current)) {
+                indegree[neighbor]--; 
+                if (indegree[neighbor] == 0) {
+                    queue.offer(neighbor);
+                }
+            }
+            result[count++] = current;
+        }
+        if (count != numCourses) {
+            return new int[0];
+        }
+        else {
+            return result;
+        }
+    }
+```
