@@ -110,6 +110,7 @@ class Solution {
 }
 ```
 ### 286. Walls and Gates
+![Graph example](../src/images/grid.jpg)
 ```agsl
 class Solution {
     int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}; 
@@ -252,6 +253,111 @@ class Solution {
                 dfs(board, nr, nc, visited, dirs);
             }
         }
+    }
+}
+```
+### 542. 01 Matrix
+```agsl
+class Solution {
+    public int[][] updateMatrix(int[][] mat) {
+        int rows = mat.length; 
+        int cols = mat[0].length; 
+
+        boolean[][] visited = new boolean[rows][cols]; 
+        Queue<Node> queue = new LinkedList<>(); 
+        for (int i=0; i< rows; i++) {
+            for (int j =0; j < cols; j++) {
+                if (mat[i][j] == 0 && !visited[i][j]) {
+                queue.offer(new Node(i, j, 0)); 
+                visited[i][j] = true;
+            }
+            }
+        }
+        int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}; 
+        while (!queue.isEmpty()) {
+            Node current = queue.poll(); 
+            for (int[] dir : dirs) {
+                int r = current.row + dir[0]; 
+                int c = current.col + dir[1]; 
+
+                if (r >= 0 && r < rows
+                && c >= 0 && c < cols &&
+                mat[r][c] == 1 && !visited[r][c]) {
+                    queue.offer(new Node (r, c, current.step + 1));
+                    visited[r][c] = true; 
+                    mat[r][c] = current.step + 1;
+                }
+
+            }
+        }
+        return mat;
+    }
+}
+class Node {
+    int row; 
+    int col;
+    int step; 
+    Node (int row, int col, int step) {
+        this.row = row;
+        this.col = col;
+        this.step = step;
+    }
+}
+```
+### 733. Flood Fill
+```agsl
+class Solution {
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
+        // there is no visited 
+        //if (image[sr][sc] == color) {
+        //    return image;
+        //}
+        boolean[][] visited = new boolean[image.length][image[0].length];
+        int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}}; 
+        dfs (image, sr, sc, color, image[sr][sc], dirs, visited); 
+        return image; 
+    }
+    void dfs(int[][] image, int r, int c, int color, int initColor, int[][] dirs, boolean[][] visited) {
+        visited[r][c] = true;
+        image[r][c] = color; 
+        for (int[] dir : dirs ) {
+            int newR = r + dir[0]; 
+            int newC = c + dir[1]; 
+
+            if (newR >= 0 && newR < image.length && newC >= 0 && newC < image[0].length
+            && image[newR][newC] == initColor && !visited[newR][newC]) {
+                dfs(image, newR, newC, color, initColor, dirs, visited);
+            }
+        }
+    }
+}
+```
+### 582. Kill Process
+```agsl
+class Solution {
+    public List<Integer> killProcess(List<Integer> pid, List<Integer> ppid, int kill) {
+        List<Integer> result = new 
+        
+    }
+        public List<Integer> killProcess2(List<Integer> pid, List<Integer> ppid, int kill) {
+        Map<Integer, List<Integer>> adjMap = new HashMap<>();
+        for (int i = 0; i < pid.size(); i++) {
+            adjMap.putIfAbsent(ppid.get(i), new ArrayList<>());
+            adjMap.get(ppid.get(i)).add(pid.get(i));
+        }
+
+        List<Integer> result = new ArrayList<>(); 
+        Stack<Integer> stack = new Stack<>();
+        stack.push(kill); 
+        while (!stack.isEmpty()) {
+            int current = stack.pop(); 
+            result.add(current); 
+            for (int child : adjMap.getOrDefault(current, new ArrayList<>())) {
+                stack.push(child);
+            }
+            
+        }
+        return result;
     }
 }
 ```
