@@ -216,6 +216,7 @@ class Solution {
 }
 ```
 ### 130. Surrounded Regions
+![Graph example](../src/images/surroundregion.jpg)
 ```agsl
 class Solution {
     public void solve(char[][] board) {
