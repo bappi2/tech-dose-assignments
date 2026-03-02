@@ -60,8 +60,30 @@ Inserts only if the key does not exist.
 
 ```java
 map.putIfAbsent("orange", 5);
+map.putIfAbsent(key, new ArrayList<>());
+map.get(key).add(value);
+```
+Common mistake (don’t do this)
+```java
+map.put(key, new ArrayList<>()); // overwrites existing list every time
+map.get(key).add(value);
 ```
 
+Even better (one-liner): computeIfAbsent
+
+This avoids doing get() separately:
+```java
+map.computeIfAbsent(key, k -> new ArrayList<>()).add(value);
+```
+Quick example: group words by first letter
+```java
+Map<Character, List<String>> map = new HashMap<>();
+
+for (String s : words) {
+char key = s.charAt(0);
+map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
+}
+```
 ### `replace(K key, V value)`
 
 Updates value only if key exists.

@@ -311,3 +311,46 @@ class TimeMap {
         return len % 2 != 0 ? merged[len / 2] : (merged[len / 2] + merged[len/2 - 1])/ 2f;
     }
 ```
+
+### Capacity To Ship Packages Within D Days (medium)
+```agsl
+class Solution {
+    public int shipWithinDays(int[] weights, int days) {
+        int low = 0;
+        int high = 0;
+
+        for (int w : weights) {
+            low = Math.max(low, w);
+            high += w;
+        }
+
+        while (low < high) {
+            int mid = low + (high - low) / 2; // candidate capacity
+            int needed = daysNeeded(weights, mid);
+
+            if (needed <= days) {
+                high = mid;      // try smaller capacity
+            } else {
+                low = mid + 1;   // need bigger capacity
+            }
+        }
+        return low;
+    }
+
+    private int daysNeeded(int[] weights, int capacity) {
+        int days = 1;
+        int currentLoad = 0;
+
+        for (int w : weights) {
+            if (currentLoad + w <= capacity) {
+                currentLoad += w;
+            } else {
+                days++;
+                currentLoad = w;
+            }
+        }
+        return days;
+    }
+}
+
+```
