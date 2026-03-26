@@ -511,6 +511,44 @@ public int[] fn(int[] arr, int k) {
         return result; 
     }
 ```
+```agsl
+public List<String> topKFrequent(String[] words, int k) {
+    Map<String, Integer> freqMap = new HashMap<>();
+    for (String word : words) {
+        freqMap.put(word, freqMap.getOrDefault(word, 0) + 1);
+    }
+
+    PriorityQueue<Node> pq = new PriorityQueue<>(
+        (a, b) -> a.freq == b.freq
+            ? b.word.compareTo(a.word)
+            : a.freq - b.freq
+    );
+
+    for (String word : freqMap.keySet()) {
+        pq.offer(new Node(word, freqMap.get(word)));
+        if (pq.size() > k) {
+            pq.poll();
+        }
+    }
+
+    List<String> result = new ArrayList<>();
+    while (!pq.isEmpty()) {
+        result.add(0, pq.poll().word);
+    }
+
+    return result;
+}
+class Node {
+    String word;
+    int freq;
+
+    Node(String word, int freq) {
+        this.word = word;
+        this.freq = freq;
+    }
+}
+
+```
 
 ## Custom Comparator
 ```agsl

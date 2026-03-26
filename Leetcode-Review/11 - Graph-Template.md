@@ -334,13 +334,10 @@ class Solution {
 }
 ```
 ### 582. Kill Process
+![Graph example](../images/582Kill-Process-img.png)
 ```agsl
 class Solution {
     public List<Integer> killProcess(List<Integer> pid, List<Integer> ppid, int kill) {
-        List<Integer> result = new 
-        
-    }
-        public List<Integer> killProcess2(List<Integer> pid, List<Integer> ppid, int kill) {
         Map<Integer, List<Integer>> adjMap = new HashMap<>();
         for (int i = 0; i < pid.size(); i++) {
             adjMap.putIfAbsent(ppid.get(i), new ArrayList<>());
