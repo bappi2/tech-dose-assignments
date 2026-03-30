@@ -747,3 +747,56 @@ class Solution {
 ```agsl
 
 ```
+### 1219. Path with Maximum Gold
+Return the maximum amount of gold you can collect under the conditions:
+
+Every time you are located in a cell you will collect all the gold in that cell.
+From your position, you can walk one step to the left, right, up, or down.
+You can't visit the same cell more than once.
+Never visit a cell with 0 gold.
+You can start and stop collecting gold from any position in the grid that has some gold.
+```agsl
+class Solution {
+    int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+
+    public int getMaximumGold(int[][] grid) {
+        int m = grid.length;
+        int n = grid[0].length;
+
+        boolean[][] visited = new boolean[m][n];
+        int maxGold = 0;
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] > 0) {
+                    maxGold = Math.max(maxGold, dfs(grid, i, j, m, n, visited));
+                }
+            }
+        }
+
+        return maxGold;
+    }
+
+    int dfs(int[][] grid, int i, int j, int m, int n, boolean[][] visited) {
+        visited[i][j] = true;
+
+        int bestNext = 0;
+
+        for (int[] dir : dirs) {
+            int newI = i + dir[0];
+            int newJ = j + dir[1];
+
+            if (newI >= 0 && newI < m &&
+                newJ >= 0 && newJ < n &&
+                grid[newI][newJ] > 0 &&
+                !visited[newI][newJ]) {
+
+                bestNext = Math.max(bestNext, dfs(grid, newI, newJ, m, n, visited));
+            }
+        }
+
+        visited[i][j] = false; // backtrack
+        return grid[i][j] + bestNext;
+    }
+}
+```

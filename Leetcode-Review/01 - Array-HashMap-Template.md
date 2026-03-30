@@ -267,6 +267,8 @@ public int[] productExceptSelf(int[] nums) {
     }
 ```
 ### 281. Zigzag Iterator
+Input: v1 = [1,2], v2 = [3,4,5,6]
+Output: [1,3,2,4,5,6]
 ```agsl
 public class ZigzagIterator {
     Queue<Integer> queue; 
@@ -367,4 +369,29 @@ public class ZigzagIterator {
         return sign * (int) ans;
 
     }
+```
+### 36. Valid Sudoku
+```agsl
+    public boolean isValidSudoku(char[][] board) {
+        Set<String> seen = new HashSet<>(); 
+
+        int row = board.length; 
+        int col = board[0].length; 
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (board[i][j] != '.') {
+                    int num = board[i][j] - '0'; 
+                    if (!seen.add(i + " row " + num) || !seen.add(j + " col " + num) || 
+                    !seen.add((i / 3) * 3 + j / 3 + " box " + num)) {
+                        System.out.println(i + " " + j+ " num: " + num);
+                        System.out.println(seen.toString());
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
+    }
+
 ```
